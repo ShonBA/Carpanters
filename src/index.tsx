@@ -7,8 +7,7 @@ import Layout from './Components/Layout/Layout';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-// Remove!!!!
-document.title = "Carpenters";
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>

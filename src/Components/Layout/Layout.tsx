@@ -6,13 +6,13 @@ import "./Layout.scss";
 function Layout(): JSX.Element {
     return (
         <div className="Layout">
-            <main>
-                <Main />
-            </main>
-            
             <header>
                 <Navbar />
             </header>
+
+            <main>
+                <Main />
+            </main>
 
             <footer>
                 <Footer />
