@@ -1,13 +1,16 @@
+@use '../../../index.scss' as i;
+
 .Navbar {
     height: 100vh;
     border: 1px solid;
+    background-color: i.$second_color;
 }
 
-ul{
+ul {
     list-style: none;
     padding: 20px 0;
 }
 
-li{
+li {
     padding: 10px;
 }

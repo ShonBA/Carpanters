@@ -8,7 +8,7 @@ import Home from "../../Home/Home";
 import Projects from "../../DisplayArea/Projects/Projects";
 import Recommendation from "../../CompanyArea/Recommendations/Recommendations";
 import PageNotFound from "../PageNotFound/PageNotFound";
-import "./Router.css";
+import "./Router.scss";
 
 
 function Router(): JSX.Element {

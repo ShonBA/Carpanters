@@ -1,0 +1,7 @@
+@use '../../../index.scss' as i;
+
+.Router {
+    border: 1px solid;
+    height: 100vh;
+    background-color: i.$fourth_color;
+}
