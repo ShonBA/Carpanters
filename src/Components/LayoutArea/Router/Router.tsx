@@ -6,7 +6,7 @@ import CustomCarpentery from "../../DisplayArea/CustomCarpentry/CustomCarpentry"
 import Gallery from "../../DisplayArea/Gallery/Gallery";
 import Home from "../../Home/Home";
 import Projects from "../../DisplayArea/Projects/Projects";
-import Recommendation from "../../CompanyArea/Recommendation/Recommendation";
+import Recommendation from "../../CompanyArea/Recommendations/Recommendations";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import "./Router.css";
 
