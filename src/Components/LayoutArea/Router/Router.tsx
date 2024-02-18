@@ -2,7 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import appConfig from "../../../Utils/appConfig";
 import AboutUs from "../../CompanyArea/AboutUs/AboutUs";
 import ContactUs from "../../CompanyArea/ContactUs/ContactUs";
-import CustomCarpentery from "../../DisplayArea/CustomCarpentery/CustomCarpentery";
+import CustomCarpentery from "../../DisplayArea/CustomCarpentry/CustomCarpentry";
 import Gallery from "../../DisplayArea/Gallery/Gallery";
 import Home from "../../Home/Home";
 import Projects from "../../DisplayArea/Projects/Projects";
