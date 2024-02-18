@@ -6,14 +6,14 @@ function Navbar(): JSX.Element {
     return (
         <div className="Navbar">
             <ul>
-                <li><NavLink to={appConfig.HomeRoute}>לוגו</NavLink></li>
+                <li><NavLink to={appConfig.HomeRoute} className="navbar-logo">לוגו</NavLink></li>
                 <li><NavLink to={appConfig.HomeRoute}>בית</NavLink></li>
                 <li><NavLink to={appConfig.GalleryRoute}>גלריה</NavLink></li>
                 <li><NavLink to={appConfig.ProjectsRoute}>פרוייקטים</NavLink></li>
-                <li><NavLink to={appConfig.CustomCarpenterRoute}>נגרות בהתאמה אישית</NavLink></li>
                 <li><NavLink to={appConfig.AboutRoute}>אודותינו</NavLink></li>
                 <li><NavLink to={appConfig.RecommendationRoute}>המלצות</NavLink></li>
                 <li><NavLink to={appConfig.ContactUsRoute}>צור קשר</NavLink></li>
+                <li><NavLink to={appConfig.CustomCarpenterRoute} className="long-text">נגרות בהתאמה אישית</NavLink></li>
             </ul>
         </div >
     );
