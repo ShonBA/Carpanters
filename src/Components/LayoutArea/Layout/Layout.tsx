@@ -6,14 +6,12 @@ import "./Layout.scss";
 function Layout(): JSX.Element {
     return (
         <div className="Layout">
-            <header>
-                <Navbar />
-            </header>
-
             <main>
                 <Router />
             </main>
-
+            <header>
+                <Navbar />
+            </header>
             <footer>
                 <Footer />
             </footer>
