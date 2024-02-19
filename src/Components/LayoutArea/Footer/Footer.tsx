@@ -10,7 +10,7 @@ function Footer(): JSX.Element {
                 <NavLink to={appConfig.AboutRoute}>קצת עלינו</NavLink>
                 <NavLink to={appConfig.ContactUsRoute}>ליצירת קשר</NavLink>
                 {/* Need to make our website hahaha */}
-                <NavLink to="#">לאתר שלנו</NavLink>
+                <NavLink to="#">האתר נבנה ומתוחזק ע"י אלכס וסילנקו ושון בן איון</NavLink>
             </div>
         </div>
     );

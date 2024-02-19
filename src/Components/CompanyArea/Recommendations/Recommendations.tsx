@@ -1,5 +1,5 @@
 import useTitle from "../../../Utils/useTitle";
-import "./Recommendations.css";
+import "./Recommendations.scss";
 
 function Recommendations(): JSX.Element {
     useTitle("Recommendations");

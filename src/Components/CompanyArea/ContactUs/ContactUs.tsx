@@ -1,5 +1,5 @@
 import useTitle from "../../../Utils/useTitle";
-import "./ContactUs.css";
+import "./ContactUs.scss";
 
 function ContactUs(): JSX.Element {
     useTitle("Contact Us")

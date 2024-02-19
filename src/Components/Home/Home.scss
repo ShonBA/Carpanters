@@ -1,0 +1,36 @@
+@use '../../index.scss' as i;
+
+.Home {
+    padding: 15px;
+
+    h1 {
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .homeAboutContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 200px;
+    }
+
+    .qualityCardContainer {
+        display: flex;
+        margin: 0 200px;
+        justify-content: center;
+        gap: 100px;
+
+        .qualityCard {
+            border: 1px solid;
+            width: 250px;
+            height: 150px;
+            padding: 20px;
+            background-color: i.$third_color;
+
+            h3,
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

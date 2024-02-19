@@ -1,5 +1,5 @@
 import useTitle from "../../../Utils/useTitle";
-import "./Gallery.css";
+import "./Gallery.scss";
 
 function Gallery(): JSX.Element {
     useTitle("Gallery");

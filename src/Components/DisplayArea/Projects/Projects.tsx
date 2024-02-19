@@ -1,5 +1,5 @@
 import useTitle from "../../../Utils/useTitle";
-import "./Projects.css";
+import "./Projects.scss";
 
 function Projects(): JSX.Element {
     useTitle("Projects");

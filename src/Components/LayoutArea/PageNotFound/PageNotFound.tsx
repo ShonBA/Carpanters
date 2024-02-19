@@ -1,4 +1,4 @@
-import "./PageNotFound.css";
+import "./PageNotFound.scss";
 
 function PageNotFound(): JSX.Element {
     return (
