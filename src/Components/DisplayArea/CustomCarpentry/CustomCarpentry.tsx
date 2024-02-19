@@ -1,6 +1,8 @@
+import useTitle from "../../../Utils/useTitle";
 import "./CustomCarpentry.css";
 
 function CustomCarpentry(): JSX.Element {
+    useTitle("Custom Carpentry")
     return (
         <div className="CustomCarpentry">
 			CustomCarpentry
