@@ -1,0 +1,8 @@
+@use '../../../index.scss' as i;
+
+.Router {
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: i.$fourth_color;
+    border-bottom: 2px solid i.$first_color;
+}

@@ -1,4 +1,5 @@
 .Layout {
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 100% 10%;
+    overflow: hidden;
 }

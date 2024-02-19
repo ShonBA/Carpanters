@@ -1,8 +1,22 @@
-body,html {
+$first_color: #BBAB8C;
+$second_color: #DED0B6;
+$third_color: #FAEED1;
+$fourth_color: #FDF7E4;
+
+body,
+html {
   height: 100vh;
   margin: 0;
   padding: 0;
   text-align: center;
   box-sizing: border-box;
   direction: rtl;
+}
+
+* {
+  font-family: rubik;
+}
+
+:root {
+  font-size: 20px;
 }
