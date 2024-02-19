@@ -1,5 +1,5 @@
 import useTitle from "../../../Utils/useTitle";
-import "./CustomCarpentry.css";
+import "./CustomCarpentry.scss";
 
 function CustomCarpentry(): JSX.Element {
     useTitle("Custom Carpentry")
