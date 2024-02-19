@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
-import "./Navbar.scss";
 import appConfig from "../../../Utils/appConfig";
+import logo from "../../../Assets/Images/WoodWonders-logo.png"
+import "./Navbar.scss";
 
 function Navbar(): JSX.Element {
     return (
         <div className="Navbar">
             <ul>
-                <li><NavLink to={appConfig.HomeRoute} className="navbar-logo">לוגו</NavLink></li>
+                <li><NavLink to={appConfig.HomeRoute} className="navbar-logo"><img src={logo} alt="logo" /></NavLink></li>
                 <li><NavLink to={appConfig.HomeRoute}>בית</NavLink></li>
                 <li><NavLink to={appConfig.GalleryRoute}>גלריה</NavLink></li>
                 <li><NavLink to={appConfig.ProjectsRoute}>פרוייקטים</NavLink></li>

@@ -14,6 +14,10 @@
     right: -150px;
     translate: all;
 
+    img {
+        width: 150px;
+    }
+
     &:hover {
         animation: expandNavbar 1000ms forwards cubic-bezier(0.075, 0.82, 0.165, 1);
     }
