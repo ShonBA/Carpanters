@@ -1,13 +1,45 @@
-import useTitle from "../../Utils/useTitle";
-import { PiMedalLight } from "react-icons/pi";
-import { PiLightbulbFilamentLight } from "react-icons/pi";
 import { IoStarOutline } from "react-icons/io5";
+import { PiLightbulbFilamentLight, PiMedalLight } from "react-icons/pi";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import x from '../../Assets/Images/backround_image1.jpg';
+import y from '../../Assets/Images/backround_image2.jpg';
+import z from '../../Assets/Images/backround_image3.jpeg';
+import useTitle from "../../Utils/useTitle";
 import "./Home.scss";
-
 function Home(): JSX.Element {
     useTitle("Home");
+    const responsive = {
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1,
+            slidesToSlide: 1
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 1,
+            slidesToSlide: 1
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+            slidesToSlide: 1
+        }
+    };
     return (
         <div className="Home">
+            <Carousel
+                responsive={responsive}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={5000}
+                transitionDuration={1500}
+                removeArrowOnDeviceType={["tablet", "mobile"]}
+            >
+                <img src={x} />
+                <img src={y} />
+                <img src={z} />
+            </Carousel>
             <div className="homeAboutContainer">
                 <h1>ווד ונדרס בע"מ</h1>
                 <p>ווד ונדרס הינה חברה ותיקה בעלת ניסיון עשיר של 15 שנים בייצור מטבחים אשר שמה לעצמה למטרה לייצר מטבחים פונקציונליים בעיצוב מעורר השראה,
