@@ -1,21 +1,21 @@
 @use '../../../../index.scss' as i;
 
 .QualityCard {
-
     .qualityCard {
         border: 1px solid;
         border-radius: 100px;
-        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        box-shadow: i.$first_color 0px 10px 20px,
+            i.$second_color 0px 6px 6px;
         width: 250px;
         height: 150px;
         padding: 20px;
         background-color: i.$third_color;
+        transition: transform 0.3s ease;
 
         img {
             box-sizing: border-box;
-            width: 30px;
-            height: 30px;
+            width: 32px;
+            height: 32px;
         }
 
         h3,
@@ -23,7 +23,8 @@
             margin: 0;
         }
 
-
+        &:hover {
+            transform: scale(1.05);
+        }
     }
-
 }
