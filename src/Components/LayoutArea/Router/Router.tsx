@@ -4,7 +4,7 @@ import AboutUs from "../../CompanyArea/AboutUs/AboutUs";
 import ContactUs from "../../CompanyArea/ContactUs/ContactUs";
 import CustomCarpentry from "../../DisplayArea/CustomCarpentry/CustomCarpentry";
 import Gallery from "../../DisplayArea/Gallery/Gallery";
-import Home from "../../Home/Home";
+import Home from "../../HomeArea/Home/Home";
 import Projects from "../../DisplayArea/Projects/Projects";
 import Recommendations from "../../CompanyArea/Recommendations/Recommendations";
 import PageNotFound from "../PageNotFound/PageNotFound";
