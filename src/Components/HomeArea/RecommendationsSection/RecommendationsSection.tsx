@@ -1,5 +1,5 @@
+import RecommendationCard from "./RecommendationCard/RecommendationCard";
 import "./RecommendationsSection.scss";
-import StarsDisplay from "./StarsDisplay/StarsDisplay";
 
 const recommendationsData = [
     {
@@ -35,15 +35,7 @@ function RecommendationsSection(): JSX.Element {
                 <h2>הלקוחות שלנו: </h2>
             </div>
             <div className="recommendationsList">
-                {recommendationsData.map((recommendation) => (
-                    <div key={recommendation.id} className="recommendation">
-                        <div className="clientName">{recommendation.clientName}</div>
-                        <div className="rank">
-                            <StarsDisplay rank={recommendation.rank} />
-                        </div>
-                        <div className="comment">{recommendation.comment}</div>
-                    </div>
-                ))}
+                {recommendationsData.map((recommendation) => <RecommendationCard key={recommendation.id} recommendation={recommendation} />)}
             </div>
         </div>
     );

@@ -1,8 +1,34 @@
+import ProjectCard from "./ProjectCard/ProjectCard";
 import "./ProjectsSection.scss";
-import projectImage1 from "../../../Assets/Images/project1.jpeg"
-import projectImage2 from "../../../Assets/Images/project2.jpeg"
 
 function ProjectsSection(): JSX.Element {
+    const projectsData = [
+        {
+            id: 1,
+            title: "משפחת כהן",
+            description: "מטבח יוקרה מושלם למשפחת כהן",
+            imageName: "project1.jpeg",
+        },
+        {
+            id: 2,
+            title: "משפחת לוי",
+            description: "מטבח כפרי וארונות חדרים.",
+            imageName: "project2.jpeg",
+        },
+        {
+            id: 3,
+            title: "משפחת יצחק",
+            description: "ריהוט כללי לכל הבית",
+            imageName: "project3.jpeg",
+        },
+        {
+            id: 4,
+            title: "משפחת ששון",
+            description: "ארונות הביתה וקיר.",
+            imageName: "project4.jpeg",
+        },
+
+    ];
     return (
         <div className="ProjectsSection">
             <div className="projectsHeader">
@@ -11,34 +37,7 @@ function ProjectsSection(): JSX.Element {
                 </h3>
             </div>
             <div className="projectsCardContainer">
-                <div className="projectCard">
-                    <div className="card">
-                        <img src={projectImage1} />
-                        <div className="card-content">
-                            <h2>
-                                Cohen's Family
-                            </h2>
-                            <p>
-                                Luxury Kitchen Cohen House,
-                                Kitchen And Kids Room.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="projectCard">
-                    <div className="card">
-                        <img src={projectImage2} />
-                        <div className="card-content">
-                            <h2>
-                                Simpsons's Family
-                            </h2>
-                            <p>
-                                Luxury Kitchen, Dinning Table At Simpsons House,
-                                Bart And Homer Rooms.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                {projectsData.map(project => <ProjectCard key={project.id} project={project} />)}
             </div>
         </div>
     );
