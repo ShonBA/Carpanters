@@ -1,3 +1,124 @@
+@use '../../../index.scss' as i;
+
 .Carousel {
-	
+    .logo-container {
+        position: absolute;
+        width: 100vw;
+        z-index: 9;
+        background-color: i.$first_color;
+        // transform: translate(50%, 0%);
+        transition: 100ms;
+
+        position: fixed;
+        opacity: 0;
+
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+
+    }
+
+    .v20 {
+        // opacity: .2;
+        animation: v0tov20 400ms linear forwards;
+    }
+
+    .v40 {
+        // opacity: .4;
+        animation: v20tov40 400ms linear forwards;
+    }
+
+    .v60 {
+        // opacity: .6;
+        animation: v40tov60 400ms linear forwards;
+    }
+
+    .v80 {
+        // opacity: .8;
+        animation: v60tov80 400ms linear forwards;
+    }
+
+    .v100 {
+        // opacity: 1;
+        animation: v80tov100 400ms linear forwards;
+    }
+
+    // .invisible-logo {
+    //     animation: hideLogo 1000ms forwards linear;
+    // }
+
+    // .visible-logo {
+    //     animation: showLogo 500ms forwards linear;
+    // }
+}
+
+// @keyframes hideLogo {
+//     0% {
+//         opacity: 1;
+//     }
+
+//     100% {
+//         opacity: 0;
+//     }
+// }
+
+// @keyframes showLogo {
+//     0% {
+//         opacity: 0;
+//     }
+
+//     100% {
+//         opacity: 1;
+//     }
+// }
+
+@keyframes v0tov20 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+@keyframes v20tov40 {
+    0% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: .4;
+    }
+}
+
+@keyframes v40tov60 {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: .6;
+    }
+}
+
+@keyframes v60tov80 {
+    0% {
+        opacity: .6;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+@keyframes v80tov100 {
+    0% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
