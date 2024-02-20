@@ -1,7 +1,6 @@
 @use '../../../index.scss' as i;
 
 .Carousel {
-  .Carousel {
     img {
         width: 100vw;
         height: 100vh;
@@ -139,4 +138,21 @@
     }
 }
 
+.Carousel {
+    img {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .react-multiple-carousel__arrow {
+        z-index: 0;
+    }
+
+    .carousel-container {
+        ul {
+            li {
+                width: 100vw !important;
+            }
+        }
+    }
 }
