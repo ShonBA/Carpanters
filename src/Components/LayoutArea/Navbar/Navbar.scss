@@ -20,10 +20,20 @@
 
     &:hover {
         animation: expandNavbar 1000ms forwards cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        li {
+            transition: 200ms;
+            opacity: 1;
+        }
     }
 
     &:not(:hover) {
         animation: collapseNavbar 1000ms forwards cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        li {
+            transition: 200ms;
+            opacity: 0;
+        }
     }
 
     ul {
