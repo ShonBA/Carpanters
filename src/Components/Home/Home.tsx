@@ -1,7 +1,7 @@
 import useTitle from "../../Utils/useTitle";
-// import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
-// import StarBorderPurple500Icon from '@mui/icons-material/StarBorderPurple500';
-// import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
+import { PiMedalLight } from "react-icons/pi";
+import { PiLightbulbFilamentLight } from "react-icons/pi";
+import { IoStarOutline } from "react-icons/io5";
 import "./Home.scss";
 
 function Home(): JSX.Element {
@@ -21,21 +21,21 @@ function Home(): JSX.Element {
             </div>
             <div className="qualityCardContainer">
                 <div className="qualityCard">
-                    {/* <WorkspacePremiumIcon /> */}
+                    <PiMedalLight />
                     <h3>איכות</h3>
                     <p>מטבחים מחומרי גלם איכותיים,
                         <br />
                         רמת גימור גבוהה ועיצובים עוצרי נשימה</p>
                 </div>
                 <div className="qualityCard">
-                    {/* <StarBorderPurple500Icon /> */}
+                    <PiLightbulbFilamentLight />
                     <h3>חדשנות</h3>
                     <p>
                         ווד ונדרס מביאים לכם את כל החידושים בתחום המטבחים
                     </p>
                 </div>
                 <div className="qualityCard">
-                    {/* <ThumbUpOffAltIcon /> */}
+                    <IoStarOutline />
                     <h3>מומחיות</h3>
                     <p>שילוב מנצח בין טכנולוגיות מתקדמות לבין אנשי מקצוע המתמחים בעיצוב מטבחים</p>
                 </div>
