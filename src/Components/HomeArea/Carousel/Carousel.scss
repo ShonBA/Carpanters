@@ -1,3 +1,143 @@
+@use '../../../index.scss' as i;
+
+.Carousel {
+    img {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .react-multiple-carousel__arrow {
+        z-index: 0;
+    }
+
+    .carousel-container {
+        ul {
+            li {
+                width: 100vw !important;
+            }
+        }
+    }
+
+    // TOP NAVBAR - DECIDE IF DELETE OR KEEP LATER
+    .center-logo-container {
+        background-color: i.$second_color;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position: absolute;
+        width: 100vw;
+        height: 150px;
+        top: 42%;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: showLogo 3s forwards;
+
+        .center-logo {
+            width: 1000px;
+            height: auto;
+            scale: .35;
+            z-index: 8;
+        }
+    }
+
+    //CENTER LOGO - DECIDE IF DELETE OR KEEP LATER
+    .logo-container {
+        width: 100vw;
+        z-index: 9;
+        background-color: i.$first_color;
+        transition: 100ms;
+
+        position: fixed;
+        opacity: 0;
+
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+
+    }
+
+    .v20 {
+        animation: v0tov20 400ms linear forwards;
+    }
+
+    .v40 {
+        animation: v20tov40 400ms linear forwards;
+    }
+
+    .v60 {
+        animation: v40tov60 400ms linear forwards;
+    }
+
+    .v80 {
+        animation: v60tov80 400ms linear forwards;
+    }
+
+    .v100 {
+        animation: v80tov100 400ms linear forwards;
+    }
+}
+
+@keyframes showLogo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes v0tov20 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+@keyframes v20tov40 {
+    0% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: .4;
+    }
+}
+
+@keyframes v40tov60 {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: .6;
+    }
+}
+
+@keyframes v60tov80 {
+    0% {
+        opacity: .6;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+@keyframes v80tov100 {
+    0% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .Carousel {
     img {
         width: 100vw;
