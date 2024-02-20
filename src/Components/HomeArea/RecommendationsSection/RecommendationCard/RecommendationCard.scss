@@ -1,0 +1,33 @@
+@use '../../../../index.scss' as i;
+
+.RecommendationCard {
+    .recommendation {
+        width: 250px;
+        height: 120px;
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        background-color: i.$first_color;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+        .clientName {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .rank {
+            color: #f39c12;
+            margin-bottom: 5px;
+
+            .star {
+                font-size: 1.2em;
+                margin-right: 3px;
+            }
+
+            .filled {
+                color: #f39c12;
+            }
+        }
+    }
+}
