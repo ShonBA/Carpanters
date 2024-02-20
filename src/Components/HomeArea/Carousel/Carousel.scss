@@ -1,12 +1,34 @@
 @use '../../../index.scss' as i;
 
 .Carousel {
-    .logo-container {
+
+    // TOP NAVBAR - DECIDE IF DELETE OR KEEP LATER
+    .center-logo-container {
+        background-color: i.$second_color;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         position: absolute;
+        width: 100vw;
+        height: 150px;
+        top: 42%;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: showLogo 3s forwards;
+
+        .center-logo {
+            width: 1000px;
+            height: auto;
+            scale: .35;
+            z-index: 8;
+        }
+    }
+
+    //CENTER LOGO - DECIDE IF DELETE OR KEEP LATER
+    .logo-container {
         width: 100vw;
         z-index: 9;
         background-color: i.$first_color;
-        // transform: translate(50%, 0%);
         transition: 100ms;
 
         position: fixed;
@@ -20,58 +42,35 @@
     }
 
     .v20 {
-        // opacity: .2;
         animation: v0tov20 400ms linear forwards;
     }
 
     .v40 {
-        // opacity: .4;
         animation: v20tov40 400ms linear forwards;
     }
 
     .v60 {
-        // opacity: .6;
         animation: v40tov60 400ms linear forwards;
     }
 
     .v80 {
-        // opacity: .8;
         animation: v60tov80 400ms linear forwards;
     }
 
     .v100 {
-        // opacity: 1;
         animation: v80tov100 400ms linear forwards;
     }
-
-    // .invisible-logo {
-    //     animation: hideLogo 1000ms forwards linear;
-    // }
-
-    // .visible-logo {
-    //     animation: showLogo 500ms forwards linear;
-    // }
 }
 
-// @keyframes hideLogo {
-//     0% {
-//         opacity: 1;
-//     }
+@keyframes showLogo {
+    0% {
+        opacity: 0;
+    }
 
-//     100% {
-//         opacity: 0;
-//     }
-// }
-
-// @keyframes showLogo {
-//     0% {
-//         opacity: 0;
-//     }
-
-//     100% {
-//         opacity: 1;
-//     }
-// }
+    100% {
+        opacity: 1;
+    }
+}
 
 @keyframes v0tov20 {
     0% {
