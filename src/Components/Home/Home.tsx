@@ -1,7 +1,7 @@
 import useTitle from "../../Utils/useTitle";
-import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
-import StarBorderPurple500Icon from '@mui/icons-material/StarBorderPurple500';
-import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
+// import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+// import StarBorderPurple500Icon from '@mui/icons-material/StarBorderPurple500';
+// import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import "./Home.scss";
 
 function Home(): JSX.Element {
@@ -21,21 +21,21 @@ function Home(): JSX.Element {
             </div>
             <div className="qualityCardContainer">
                 <div className="qualityCard">
-                    <WorkspacePremiumIcon />
+                    {/* <WorkspacePremiumIcon /> */}
                     <h3>איכות</h3>
                     <p>מטבחים מחומרי גלם איכותיים,
                         <br />
                         רמת גימור גבוהה ועיצובים עוצרי נשימה</p>
                 </div>
                 <div className="qualityCard">
-                    <StarBorderPurple500Icon />
+                    {/* <StarBorderPurple500Icon /> */}
                     <h3>חדשנות</h3>
                     <p>
                         ווד ונדרס מביאים לכם את כל החידושים בתחום המטבחים
                     </p>
                 </div>
                 <div className="qualityCard">
-                    <ThumbUpOffAltIcon />
+                    {/* <ThumbUpOffAltIcon /> */}
                     <h3>מומחיות</h3>
                     <p>שילוב מנצח בין טכנולוגיות מתקדמות לבין אנשי מקצוע המתמחים בעיצוב מטבחים</p>
                 </div>
