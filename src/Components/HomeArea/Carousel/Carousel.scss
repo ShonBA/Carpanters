@@ -1,7 +1,22 @@
-<<<<<<< HEAD
 @use '../../../index.scss' as i;
 
 .Carousel {
+    img {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .react-multiple-carousel__arrow {
+        z-index: 0;
+    }
+
+    .carousel-container {
+        ul {
+            li {
+                width: 100vw !important;
+            }
+        }
+    }
 
     // TOP NAVBAR - DECIDE IF DELETE OR KEEP LATER
     .center-logo-container {
@@ -122,7 +137,7 @@
         opacity: 1;
     }
 }
-=======
+
 .Carousel {
     img {
         width: 100vw;
@@ -141,4 +156,3 @@
         }
     }
 }
->>>>>>> 99cf6470fad6ef3f1ef647b44524708c25dea26e

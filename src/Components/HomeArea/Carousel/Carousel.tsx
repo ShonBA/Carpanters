@@ -5,10 +5,6 @@ import bg1 from '../../../Assets/Images/backround_image1.jpg';
 import bg2 from '../../../Assets/Images/backround_image2.jpg';
 import bg3 from '../../../Assets/Images/backround_image3.jpeg';
 import "./Carousel.scss";
-<<<<<<< HEAD
-import { useEffect, useState } from "react";
-=======
->>>>>>> 99cf6470fad6ef3f1ef647b44524708c25dea26e
 
 function Carousel(): JSX.Element {
     {/* ------- TOP NAVBAR - DECIDE IF DELETE OR KEEP LATER -------*/ }
