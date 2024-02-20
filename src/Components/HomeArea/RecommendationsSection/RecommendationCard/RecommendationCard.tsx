@@ -11,10 +11,12 @@ function RecommendationCard(props: RecommendationProps): JSX.Element {
         <div className="RecommendationCard">
             <div key={props.recommendation.id} className="recommendation">
                 <div className="clientName">{props.recommendation.clientName}</div>
+                <div className="date">{props.recommendation.date}</div>
                 <div className="rank">
                     <StarsDisplay rank={props.recommendation.rank} />
                 </div>
                 <div className="comment">{props.recommendation.comment}</div>
+
             </div>
         </div>
     );

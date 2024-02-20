@@ -3,7 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import bg1 from '../../../Assets/Images/backround_image1.jpg';
 import bg2 from '../../../Assets/Images/backround_image2.jpg';
 import bg3 from '../../../Assets/Images/backround_image3.jpeg';
-import "./Carousel.css";
+import "./Carousel.scss";
 
 function Carousel(): JSX.Element {
     const responsive = {

@@ -7,25 +7,25 @@ function ProjectsSection(): JSX.Element {
             id: 1,
             title: "משפחת כהן",
             description: "מטבח יוקרה מושלם למשפחת כהן",
-            imageName: "project1.jpeg",
+            imageName: "project1.jpg",
         },
         {
             id: 2,
             title: "משפחת לוי",
             description: "מטבח כפרי וארונות חדרים.",
-            imageName: "project2.jpeg",
+            imageName: "project2.jpg",
         },
         {
             id: 3,
             title: "משפחת יצחק",
             description: "ריהוט כללי לכל הבית",
-            imageName: "project3.jpeg",
+            imageName: "project3.jpg",
         },
         {
             id: 4,
             title: "משפחת ששון",
             description: "ארונות הביתה וקיר.",
-            imageName: "project4.jpeg",
+            imageName: "project4.jpg",
         },
 
     ];
