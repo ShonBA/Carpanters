@@ -2,28 +2,10 @@ import "./AboutUsSection.scss";
 import { IoStarOutline } from "react-icons/io5";
 import { PiLightbulbFilamentLight, PiMedalLight } from "react-icons/pi";
 import QualityCard from "./QualityCard/QualityCard";
+import DataArea from "../../../Service/DataArea";
 
 function AboutUsSection(): JSX.Element {
-    const aboutData = [
-        {
-            id: 1,
-            header: "איכות",
-            description: "מטבחים מחומרי גלם איכותיים, רמת גימור גבוהה ועיצובים עוצרי נשימה",
-            imageName: "medal.png",
-        },
-        {
-            id: 2,
-            header: "חדשנות",
-            description: "ווד ונדרס מביאים לכם את כל החידושים בתחום המטבחים",
-            imageName: "bulb.png",
-        },
-        {
-            id: 3,
-            header: "מומחיות",
-            description: "שילוב מנצח בין טכנולוגיות מתקדמות לבין אנשי מקצוע המתמחים בעיצוב מטבחים",
-            imageName: "star.png",
-        },
-    ];
+    const aboutData = DataArea.aboutData;
     return (
         <div className="AboutUsSection">
             <div className="homeAboutContainer">

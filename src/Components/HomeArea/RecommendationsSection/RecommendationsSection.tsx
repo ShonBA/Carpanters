@@ -1,38 +1,9 @@
+import DataArea from "../../../Service/DataArea";
 import RecommendationCard from "./RecommendationCard/RecommendationCard";
 import "./RecommendationsSection.scss";
 
-const recommendationsData = [
-    {
-        id: 1,
-        clientName: "נתן כהן",
-        rank: 4,
-        comment: "שירות מעולה, ממליץ מאוד!",
-        date: "17-03-2024",
-    },
-    {
-        id: 2,
-        clientName: "יצחק לוי",
-        rank: 5,
-        comment: "מחיר הוגן, מוצר איכותי ושירות של חבר! רק אצל ווד ונדרס",
-        date: "21-02-2024",
-    },
-    {
-        id: 3,
-        clientName: "בארט סימפסון",
-        rank: 5,
-        comment: "מרגיש כמו בבית מלוכה! הצוות הכי מקצועי שנתקלתי בו!",
-        date: "28-11-2023",
-    },
-    {
-        id: 4,
-        clientName: "דני יצחקי",
-        rank: 2,
-        comment: "תקעו אותי חודש בזמני אספקה",
-        date: "16-08-2023",
-    },
-];
-
 function RecommendationsSection(): JSX.Element {
+    const recommendationsData = DataArea.recommendationsData;
     return (
         <div className="RecommendationsSection">
             <div className="recHeader">
