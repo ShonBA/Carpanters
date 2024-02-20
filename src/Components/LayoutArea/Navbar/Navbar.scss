@@ -35,7 +35,7 @@
     li {
 
         &:nth-of-type(1) {
-            height: 140px;
+            height: 80px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -66,7 +66,13 @@
             }
 
             &.navbar-logo {
-                // ADD LATER ITS FUCKING 1AM
+                &:hover {
+                    background-color: transparent;
+                }
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
