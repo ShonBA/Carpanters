@@ -1,0 +1,29 @@
+@use '../../../../index.scss' as i;
+
+.QualityCard {
+
+    .qualityCard {
+        border: 1px solid;
+        border-radius: 100px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        width: 250px;
+        height: 150px;
+        padding: 20px;
+        background-color: i.$third_color;
+
+        img {
+            box-sizing: border-box;
+            width: 30px;
+            height: 30px;
+        }
+
+        h3,
+        p {
+            margin: 0;
+        }
+
+
+    }
+
+}

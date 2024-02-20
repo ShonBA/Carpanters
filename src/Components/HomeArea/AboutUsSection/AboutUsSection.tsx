@@ -1,11 +1,32 @@
 import "./AboutUsSection.scss";
 import { IoStarOutline } from "react-icons/io5";
 import { PiLightbulbFilamentLight, PiMedalLight } from "react-icons/pi";
+import QualityCard from "./QualityCard/QualityCard";
 
 function AboutUsSection(): JSX.Element {
+    const aboutData = [
+        {
+            id: 1,
+            header: "איכות",
+            description: "מטבחים מחומרי גלם איכותיים, רמת גימור גבוהה ועיצובים עוצרי נשימה",
+            imageName: "medal.png",
+        },
+        {
+            id: 2,
+            header: "חדשנות",
+            description: "ווד ונדרס מביאים לכם את כל החידושים בתחום המטבחים",
+            imageName: "bulb.png",
+        },
+        {
+            id: 3,
+            header: "מומחיות",
+            description: "שילוב מנצח בין טכנולוגיות מתקדמות לבין אנשי מקצוע המתמחים בעיצוב מטבחים",
+            imageName: "star.png",
+        },
+    ];
     return (
         <div className="AboutUsSection">
-			            <div className="homeAboutContainer">
+            <div className="homeAboutContainer">
                 <h1>ווד ונדרס בע"מ</h1>
                 <p>ווד ונדרס הינה חברה ותיקה בעלת ניסיון עשיר של 15 שנים בייצור מטבחים אשר שמה לעצמה למטרה לייצר מטבחים פונקציונליים בעיצוב מעורר השראה,
                     המשלבים טכנולוגיה מתקדמת,
@@ -17,25 +38,7 @@ function AboutUsSection(): JSX.Element {
                 </p>
             </div>
             <div className="qualityCardContainer">
-                <div className="qualityCard">
-                    <PiMedalLight />
-                    <h3>איכות</h3>
-                    <p>מטבחים מחומרי גלם איכותיים,
-                        <br />
-                        רמת גימור גבוהה ועיצובים עוצרי נשימה</p>
-                </div>
-                <div className="qualityCard">
-                    <PiLightbulbFilamentLight />
-                    <h3>חדשנות</h3>
-                    <p>
-                        ווד ונדרס מביאים לכם את כל החידושים בתחום המטבחים
-                    </p>
-                </div>
-                <div className="qualityCard">
-                    <IoStarOutline />
-                    <h3>מומחיות</h3>
-                    <p>שילוב מנצח בין טכנולוגיות מתקדמות לבין אנשי מקצוע המתמחים בעיצוב מטבחים</p>
-                </div>
+                {aboutData.map(about => <QualityCard key={about.id} quality={about} />)}
             </div>
         </div>
     );

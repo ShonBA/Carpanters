@@ -2,6 +2,7 @@ import useTitle from "../../../Utils/useTitle";
 import AboutUsSection from "../AboutUsSection/AboutUsSection";
 import Carousel from "../Carousel/Carousel";
 import ProjectsSection from "../ProjectsSection/ProjectsSection";
+import RecommendationsSection from "../RecommendationsSection/RecommendationsSection";
 import "./Home.scss";
 
 function Home(): JSX.Element {
@@ -12,6 +13,7 @@ function Home(): JSX.Element {
             <Carousel />
             <AboutUsSection />
             <ProjectsSection />
+            <RecommendationsSection />
         </div>
     );
 }
