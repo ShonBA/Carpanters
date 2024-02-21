@@ -1,3 +1,5 @@
+@use '../../../index.scss' as i;
+
 .AboutUsSection {
     margin: 25px 0;
 
@@ -14,6 +16,45 @@
         border-radius: 150px;
         padding: 50px;
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        position: relative;
+
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 2px solid i.$first_color;
+            animation: clippath 3s infinite linear;
+            border-radius: 150px;
+        }
+
+        &::after {
+            animation: clippath 3s infinite -1.5s linear;
+        }
+    }
+
+    @keyframes clippath {
+
+        0%,
+        100% {
+            clip-path: inset(0 0 98% 0);
+        }
+
+        25% {
+            clip-path: inset(0 98% 0 0);
+        }
+
+        50% {
+            clip-path: inset(98% 0 0 0);
+        }
+
+        75% {
+            clip-path: inset(0 0 0 98%);
+        }
     }
 
     .qualityCardContainer {
