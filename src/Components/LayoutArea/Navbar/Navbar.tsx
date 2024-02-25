@@ -10,7 +10,6 @@ function Navbar(): JSX.Element {
                 <li><NavLink to={appConfig.HomeRoute} className="navbar-logo"><img src={logo} alt="logo" /></NavLink></li>
                 <li><NavLink to={appConfig.HomeRoute}>בית</NavLink></li>
                 <li><NavLink to={appConfig.GalleryRoute}>גלריה</NavLink></li>
-                <li><NavLink to={appConfig.ProjectsRoute}>פרוייקטים</NavLink></li>
                 <li><NavLink to={appConfig.AboutRoute}>אודותינו</NavLink></li>
                 <li><NavLink to={appConfig.RecommendationRoute}>המלצות</NavLink></li>
                 <li><NavLink to={appConfig.ContactUsRoute}>צור קשר</NavLink></li>

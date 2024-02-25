@@ -19,7 +19,7 @@ function ContactUsForm(): JSX.Element {
             <label>טלפון</label>
             <input type="tel" name="Phone" />
 
-            <button type="submit" disabled={state.submitting}>Submit</button>
+            <button type="submit" disabled={state.submitting}>שלח</button>
         </form>
     );
 }
