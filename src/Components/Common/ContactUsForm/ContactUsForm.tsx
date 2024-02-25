@@ -9,17 +9,17 @@ function ContactUsForm(): JSX.Element {
         return <p>Thanks for joining!</p>;
     }
     return (
-        <form onSubmit={handleSubmit}>
-            <label>שם מלא</label>
-            <input type="text" name="Full Name" />
-
-            <label>דואר אלקטרוני</label>
-            <input type="email" name="Email" />
-
-            <label>טלפון</label>
-            <input type="tel" name="Phone" />
-
-            <button type="submit" disabled={state.submitting}>Submit</button>
+        <form onSubmit={handleSubmit} className='ContactUsForm'>
+            <div className='form-data'>
+                <input type="text" name="Full Name" placeholder='שם מלא' />
+                <input type="email" name="Email" placeholder='דוא"ל' />
+                <input type="tel" name="Phone" placeholder='טלפון' />
+                {/* <button type="submit" disabled={state.submitting}>שלח</button> */}
+            </div>
+            <div className='form-content'>
+                <h2>דברו איתנו!</h2>
+                <p>אנו זמינים עבורכם לכל שאלה. השאירו פרטים ואנו מבטיחים לחזור אליכם תוך 2 ימי עסקים.</p>
+            </div>
         </form>
     );
 }
