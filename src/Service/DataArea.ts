@@ -79,7 +79,81 @@ const recommendationsData = [
         date: "16-08-2023",
     },
 ];
+const galleryData = [
+    {
+        id: 1,
+        caption: "מטבח פורמיקה",
+        material: "פורמיקה",
+        imageName: "gallery-HDF1.jpg",
+    },
+    {
+        id: 2,
+        caption: "מטבח פורמיקה",
+        material: "פורמיקה",
+        imageName: "gallery-HDF2.webp",
+    },
+    {
+        id: 3,
+        caption: "מטבח פורמיקה",
+        material: "פורמיקה",
+        imageName: "gallery-HDF3.webp",
+    },
+    {
+        id: 4,
+        caption: "מטבח פורמיקה",
+        material: "פורמיקה",
+        imageName: "gallery-HDF4.jpg",
+    },
+    {
+        id: 5,
+        caption: "מטבח מלמין",
+        material: "מלמין",
+        imageName: "gallery-malamin1.jpeg",
+    },
+    {
+        id: 6,
+        caption: "מטבח מלמין",
+        material: "מלמין",
+        imageName: "gallery-malamin2.jpeg",
+    },
+    {
+        id: 7,
+        caption: "מטבח מלמין",
+        material: "מלמין",
+        imageName: "gallery-malamin3.jpeg",
+    },
+    {
+        id: 8,
+        caption: "מטבח מלמין",
+        material: "מלמין",
+        imageName: "gallery-malamin4.jpg",
+    },
+    {
+        id: 9,
+        caption: "מטבח פולימר",
+        material: "פולימר",
+        imageName: "gallery-polimer1.jpeg",
+    },
+    {
+        id: 10,
+        caption: "מטבח פולימר",
+        material: "פולימר",
+        imageName: "gallery-polimer2.jpg",
+    },
+    {
+        id: 11,
+        caption: "מטבח פולימר",
+        material: "פולימר",
+        imageName: "gallery-polimer3.jpeg",
+    },
+    {
+        id: 12,
+        caption: "מטבח פולימר",
+        material: "פולימר",
+        imageName: "gallery-polimer4.jpg",
+    },
+];
 
 export default {
-    recommendationsData, aboutData, projectsData
+    recommendationsData, aboutData, projectsData, galleryData
 }
