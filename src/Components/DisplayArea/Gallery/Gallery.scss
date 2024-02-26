@@ -1,41 +1,32 @@
 .Gallery {
     h2 {
         margin: 0;
+        padding: 20px;
     }
 
     .gallery {
-        display: flex;
         padding: 2px;
         transition: .3s;
-
-        &:hover &__image {
-            filter: grayscale(1);
-        }
-
-        &__column {
-            display: flex;
-            flex-direction: column;
-            width: 25%;
-        }
-
 
         &__thumb {
             position: relative;
 
             &:hover {
-                .gallery__image {
-                    filter: grayscale(0);
-                }
-
                 .gallery__caption {
                     opacity: 1;
                 }
             }
         }
 
+        &__row {
+            width: 100%; 
+        display: flex;
+
+        }
+
         &__image {
-            display: block;
-            width: 100%;
+            width: 300px;
+            height: 250px;
             transition: .3s;
 
             &:hover {
