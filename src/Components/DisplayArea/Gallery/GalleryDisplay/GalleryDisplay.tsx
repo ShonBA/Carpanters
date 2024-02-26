@@ -9,10 +9,10 @@ function GalleryDisplay(): JSX.Element {
 
     return (
         <div className="GalleryDisplay">
-            {materials.map(material => (
-                <div>
+            {materials.map((material, index) => (
+                <div key={index}>
                     <h2>מטבחי {material} <NavLink to={'#'}>ראה עוד...</NavLink></h2>
-                    <div key={material} className="gallery__row">
+                    <div className="gallery__row">
                         {galleryData
                             .filter(g => g.material === material)
                             .map(d => <GalleryCard key={d.id} gallery={d} />)

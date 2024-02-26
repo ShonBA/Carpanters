@@ -14,7 +14,7 @@ function ContactUsForm(): JSX.Element {
                 <input type="text" name="Full Name" placeholder='שם מלא' />
                 <input type="email" name="Email" placeholder='דוא"ל' />
                 <input type="tel" name="Phone" placeholder='טלפון' />
-                {/* <button type="submit" disabled={state.submitting}>שלח</button> */}
+                <button type="submit" disabled={state.submitting}>שלח</button>
             </div>
             <div className='form-content'>
                 <h2>דברו איתנו!</h2>
