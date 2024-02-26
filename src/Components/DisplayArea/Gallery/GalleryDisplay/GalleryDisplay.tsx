@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import DataArea from "../../../../Service/DataArea";
 import GalleryCard from "../GalleryCard/GalleryCard";
 import "./GalleryDisplay.scss";
@@ -10,7 +11,7 @@ function GalleryDisplay(): JSX.Element {
         <div className="GalleryDisplay">
             {materials.map(material => (
                 <div>
-                    <h2>מטבחי {material}</h2>
+                    <h2>מטבחי {material} <NavLink to={'#'}>ראה עוד...</NavLink></h2>
                     <div key={material} className="gallery__row">
                         {galleryData
                             .filter(g => g.material === material)
