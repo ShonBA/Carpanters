@@ -79,7 +79,7 @@ const recommendationsData = [
         date: "16-08-2023",
     },
 ];
-const galleryData = [
+const kitchenGalleryData = [
     {
         id: 1,
         caption: "מטבח פורמיקה",
@@ -155,5 +155,5 @@ const galleryData = [
 ];
 
 export default {
-    recommendationsData, aboutData, projectsData, galleryData
+    recommendationsData, aboutData, projectsData, kitchenGalleryData
 }
