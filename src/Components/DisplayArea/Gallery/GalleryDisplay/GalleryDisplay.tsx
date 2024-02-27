@@ -8,11 +8,8 @@ function GalleryDisplay(): JSX.Element {
 
     return (
         <div className="GalleryDisplay">
-            <div className="kitchensSection">
-                <CategoryGallery key={data.kitchens.id} category={data.kitchens} />
-            </div>
-            <div className="closetsSection">
-                <CategoryGallery key={data.closets.id} category={data.closets} />
+            <div className="categorySection">
+                {data.map(c => <CategoryGallery key={c.id} category={c} />)}
             </div>
         </div>
     );
