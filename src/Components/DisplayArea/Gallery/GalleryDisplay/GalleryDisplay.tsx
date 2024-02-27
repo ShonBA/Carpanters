@@ -1,27 +1,19 @@
-import { useState } from "react";
-import { Collapse } from 'react-collapse';
 import DataArea from "../../../../Service/DataArea";
-import GalleryRow from "../GalleryRow/GalleryRow";
+import CategoryGallery from "../CategoryGallery/CategoryGallery";
 import "./GalleryDisplay.scss";
 
 function GalleryDisplay(): JSX.Element {
-    const kitchenGalleryData = DataArea.kitchenGalleryData;
-    const materials = ["פורמיקה", "מלמין", "פולימר"];
 
-    const [isKitchensOpen, setIsKitchensOpen] = useState<boolean>(false);
+    const data = DataArea.galleryData;
 
     return (
         <div className="GalleryDisplay">
-            <h2>מטבחים
-                {isKitchensOpen ?
-                    <a onClick={() => setIsKitchensOpen(false)}>סגור</a> :
-                    <a onClick={() => setIsKitchensOpen(true)}>ראה עוד...</a>}
-            </h2>
-            <Collapse isOpened={isKitchensOpen}>
-                {materials.map((material, index) => (
-                    <GalleryRow key={index} gallery={kitchenGalleryData} material={material} />
-                ))}
-            </Collapse>
+            <div className="kitchensSection">
+                <CategoryGallery key={data.kitchens.id} category={data.kitchens} />
+            </div>
+            <div className="closetsSection">
+                <CategoryGallery key={data.closets.id} category={data.closets} />
+            </div>
         </div>
     );
 }

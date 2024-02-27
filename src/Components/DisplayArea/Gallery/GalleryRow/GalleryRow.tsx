@@ -5,8 +5,9 @@ import GalleryCard from "../GalleryCard/GalleryCard";
 import "./GalleryRow.css";
 
 interface GalleryRowData {
-    gallery: GalleryModel[];
+    type: string[]
     material: string
+    gallery: GalleryModel[];
 }
 
 function GalleryRow(props: GalleryRowData): JSX.Element {
@@ -15,10 +16,10 @@ function GalleryRow(props: GalleryRowData): JSX.Element {
 
     return (
         <div className="GalleryRow">
-            <h2>מטבחי {props.material}
+            <h2>{props.type[1]} {props.material}
                 {isRowOpen ?
-                    <a onClick={() => setIsRowOpen(false)}>סגור מטבחי {props.material}</a> :
-                    <a onClick={() => setIsRowOpen(true)}>ראה עוד מטבחי {props.material}..</a>
+                    <a onClick={() => setIsRowOpen(false)}>סגור {props.type[1]} {props.material}</a> :
+                    <a onClick={() => setIsRowOpen(true)}>ראה עוד {props.type[1]} {props.material}..</a>
                 }
             </h2>
             <Collapse isOpened={isRowOpen}>

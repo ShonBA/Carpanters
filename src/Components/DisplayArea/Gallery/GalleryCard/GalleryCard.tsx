@@ -6,6 +6,7 @@ interface GalleryCardProps {
 }
 
 function GalleryCard(props: GalleryCardProps): JSX.Element {
+
     return (
         <div className="GalleryCard">
             <figure className="gallery__thumb">
