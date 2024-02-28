@@ -1,5 +1,3 @@
-
-
 const aboutData = [
     {
         id: 1,
@@ -82,7 +80,8 @@ const recommendationsData = [
 const galleryData = [
     {
         id: 1,
-        type: ["מטבחים", "מטבחי"],
+        type: "מטבחים",
+        typeShort: "מטבחי",
         materials: ["פורמיקה", "מלמין", "פולימר"],
         data: [
             {
@@ -161,7 +160,8 @@ const galleryData = [
     },
     {
         id: 2,
-        type: ["ארונות", "ארונות"],
+        type: "ארונות",
+        typeShort: "",
         materials: ["מלמין"],
         data: [
             {
