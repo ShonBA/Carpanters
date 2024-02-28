@@ -46,8 +46,7 @@ function GalleryRow(props: GalleryRowData): JSX.Element {
             </h2>
             <Collapse isOpened={isRowOpen}>
                 <div className="gallery__row">
-                    {/* <Carousel /> */}
-                    {/* <CarouselLib
+                    <CarouselLib
                         responsive={responsive}
                         infinite={true}
                         autoPlay={true}
@@ -55,29 +54,13 @@ function GalleryRow(props: GalleryRowData): JSX.Element {
                         transitionDuration={1500}
                         removeArrowOnDeviceType={["tablet", "mobile"]}
                     >
-                        <div>nicekitchen1</div>
-                        <div>nicekitchen2</div>
-                        <div>nicekitchen3</div>
-
-                    </CarouselLib> */}
-                    {/* {props.category.data
-                        .filter(g => g.material === props.material)
-                        .map(d => <GalleryCard key={d.id} gallery={d} />)
-                    } */}
+                        {props.category.data
+                            .filter(g => g.material === props.material)
+                            .map(d => <GalleryCard key={d.id} gallery={d} />)}
+                    </CarouselLib>
                 </div>
             </Collapse>
-            <CarouselLib
-                responsive={responsive}
-                infinite={true}
-                autoPlay={true}
-                autoPlaySpeed={5000}
-                transitionDuration={1500}
-                removeArrowOnDeviceType={["tablet", "mobile"]}
-            >
-                {props.category.data
-                    .filter(g => g.material === props.material)
-                    .map(d => <GalleryCard key={d.id} gallery={d} />)}
-            </CarouselLib>
+
         </div>
     );
 }
