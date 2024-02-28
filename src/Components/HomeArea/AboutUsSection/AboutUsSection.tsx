@@ -1,9 +1,19 @@
-import DataArea from "../../../Service/DataArea";
+import { useEffect, useState } from "react";
+import QualityModel from "../../../Models/QualityModel";
+import dataService from "../../../Service/DataArea";
 import "./AboutUsSection.scss";
 import QualityCard from "./QualityCard/QualityCard";
 
 function AboutUsSection(): JSX.Element {
-    const aboutData = DataArea.aboutData;
+
+    const [aboutData, setAboutData] = useState<QualityModel[]>([]);
+
+    useEffect(() => {
+        dataService.getAllAboutUsData()
+            .then(beAboutUsData => setAboutData(beAboutUsData))
+            .catch(err => console.log(err))
+    }, []);
+
     return (
         <div className="AboutUsSection">
             <div className="homeAboutContainer">
