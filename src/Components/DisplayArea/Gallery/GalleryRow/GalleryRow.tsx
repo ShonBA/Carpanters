@@ -3,8 +3,6 @@ import { Collapse } from "react-collapse";
 import CarouselLib from "react-multi-carousel";
 import GalleryCategoryModel from "../../../../Models/GalleryCategoryModel";
 import GalleryCard from "../GalleryCard/GalleryCard";
-import GalleryCategoryModel from "../../../../Models/GalleryCategoryModel";
-import GalleryCard from "../GalleryCard/GalleryCard";
 import { Squeeze as Hamburger } from 'hamburger-react'
 import "./GalleryRow.scss";
 
