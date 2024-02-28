@@ -4,6 +4,8 @@ import GalleryCategoryModel from "../../../../Models/GalleryCategoryModel";
 import GalleryRow from "../GalleryRow/GalleryRow";
 import "./CategoryGallery.scss";
 import { Squash as Hamburger } from 'hamburger-react'
+import { Squash as Hamburger } from 'hamburger-react'
+import "./CategoryGallery.css";
 
 interface GalleryCategoryProps {
     category: GalleryCategoryModel;
