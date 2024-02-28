@@ -1,11 +1,9 @@
 import { useState } from "react";
 import { Collapse } from "react-collapse";
-import GalleryModel from "../../../../Models/GalleryModel";
-import GalleryCard from "../GalleryCard/GalleryCard";
 import CarouselLib from "react-multi-carousel";
-import "./GalleryRow.scss";
 import GalleryCategoryModel from "../../../../Models/GalleryCategoryModel";
-// import Carousel from "../Carousel/Carousel";
+import GalleryCard from "../GalleryCard/GalleryCard";
+import "./GalleryRow.scss";
 
 interface GalleryRowData {
     category: GalleryCategoryModel;
@@ -14,7 +12,7 @@ interface GalleryRowData {
 
 function GalleryRow(props: GalleryRowData): JSX.Element {
 
-    const [isRowOpen, setIsRowOpen] = useState<boolean>(true);
+    const [isRowOpen, setIsRowOpen] = useState<boolean>(false);
 
     const isTypeShort = props.category.typeShort === "" ? props.category.type : props.category.typeShort
 
