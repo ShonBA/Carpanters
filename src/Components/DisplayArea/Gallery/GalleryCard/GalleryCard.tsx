@@ -9,10 +9,10 @@ function GalleryCard(props: GalleryCardProps): JSX.Element {
 
     return (
         <div className="GalleryCard">
-            <figure className="gallery__thumb">
+            <div className="gallery__thumb">
                 <img src={require("../../../../Assets/Images/Gallery/" + props.gallery.imageName)} className="gallery__image" />
-                <figcaption className="gallery__caption">{props.gallery.caption}</figcaption>
-            </figure>
+                <div className="gallery__caption">{props.gallery.caption}</div>
+            </div>
         </div>
     );
 }

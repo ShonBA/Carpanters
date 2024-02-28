@@ -2,29 +2,31 @@ import { useState } from "react";
 import { Collapse } from "react-collapse";
 import GalleryModel from "../../../../Models/GalleryModel";
 import GalleryCard from "../GalleryCard/GalleryCard";
-import "./GalleryRow.css";
+import "./GalleryRow.scss";
+import GalleryCategoryModel from "../../../../Models/GalleryCategoryModel";
 
 interface GalleryRowData {
-    type: string[]
-    material: string
-    gallery: GalleryModel[];
+    category: GalleryCategoryModel;
+    material: string;
 }
 
 function GalleryRow(props: GalleryRowData): JSX.Element {
 
     const [isRowOpen, setIsRowOpen] = useState<boolean>(true);
 
+    const isTypeShort = props.category.typeShort === "" ? props.category.type : props.category.typeShort
+
     return (
         <div className="GalleryRow">
-            <h2>{props.type[1]} {props.material}
+            <h2>{isTypeShort} {props.material}
                 {isRowOpen ?
-                    <a onClick={() => setIsRowOpen(false)}>סגור {props.type[1]} {props.material}</a> :
-                    <a onClick={() => setIsRowOpen(true)}>ראה עוד {props.type[1]} {props.material}..</a>
+                    <a onClick={() => setIsRowOpen(false)}>סגור {isTypeShort} {props.material}</a> :
+                    <a onClick={() => setIsRowOpen(true)}>ראה עוד {isTypeShort} {props.material}..</a>
                 }
             </h2>
             <Collapse isOpened={isRowOpen}>
                 <div className="gallery__row">
-                    {props.gallery
+                    {props.category.data
                         .filter(g => g.material === props.material)
                         .map(d => <GalleryCard key={d.id} gallery={d} />)
                     }

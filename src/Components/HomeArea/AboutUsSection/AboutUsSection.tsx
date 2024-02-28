@@ -1,8 +1,6 @@
-import "./AboutUsSection.scss";
-import { IoStarOutline } from "react-icons/io5";
-import { PiLightbulbFilamentLight, PiMedalLight } from "react-icons/pi";
-import QualityCard from "./QualityCard/QualityCard";
 import DataArea from "../../../Service/DataArea";
+import "./AboutUsSection.scss";
+import QualityCard from "./QualityCard/QualityCard";
 
 function AboutUsSection(): JSX.Element {
     const aboutData = DataArea.aboutData;
