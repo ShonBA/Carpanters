@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Collapse } from "react-collapse";
-import GalleryModel from "../../../../Models/GalleryModel";
-import GalleryCard from "../GalleryCard/GalleryCard";
-import "./GalleryRow.scss";
 import GalleryCategoryModel from "../../../../Models/GalleryCategoryModel";
+import GalleryCard from "../GalleryCard/GalleryCard";
+import { Squeeze as Hamburger } from 'hamburger-react'
+import "./GalleryRow.scss";
 
 interface GalleryRowData {
     category: GalleryCategoryModel;
@@ -20,9 +20,8 @@ function GalleryRow(props: GalleryRowData): JSX.Element {
         <div className="GalleryRow">
             <h2>{isTypeShort} {props.material}
                 {isRowOpen ?
-                    <a onClick={() => setIsRowOpen(false)}>סגור {isTypeShort} {props.material}</a> :
-                    <a onClick={() => setIsRowOpen(true)}>ראה עוד {isTypeShort} {props.material}..</a>
-                }
+                    <Hamburger toggled={isRowOpen} toggle={setIsRowOpen} /> :
+                    <Hamburger toggled={isRowOpen} toggle={setIsRowOpen} />}
             </h2>
             <Collapse isOpened={isRowOpen}>
                 <div className="gallery__row">
