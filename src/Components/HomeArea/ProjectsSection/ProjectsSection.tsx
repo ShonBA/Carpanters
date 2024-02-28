@@ -1,9 +1,20 @@
-import DataArea from "../../../Service/DataArea";
+import { useEffect, useState } from "react";
+import ProjectModel from "../../../Models/ProjectModel";
+import dataService from "../../../Service/DataArea";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import "./ProjectsSection.scss";
 
 function ProjectsSection(): JSX.Element {
-    const projectsData = DataArea.projectsData;
+
+    const [feProjectsData, setFeProjectsData] = useState<ProjectModel[]>([]);
+
+    useEffect(() => {
+        dataService.getAllProjectsData()
+            .then(beProjectsData => setFeProjectsData(beProjectsData))
+            .catch(err => console.log(err))
+    }, []);
+
+
     return (
         <div className="ProjectsSection">
             <div className="projectsHeader">
@@ -12,7 +23,7 @@ function ProjectsSection(): JSX.Element {
                 </h3>
             </div>
             <div className="projectsCardContainer">
-                {projectsData.map(project => <ProjectCard key={project.id} project={project} />)}
+                {feProjectsData.map(project => <ProjectCard key={project.id} project={project} />)}
             </div>
         </div>
     );

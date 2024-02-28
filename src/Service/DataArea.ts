@@ -1,198 +1,32 @@
-const aboutData = [
-    {
-        id: 1,
-        header: "איכות",
-        description: "מטבחים מחומרי גלם איכותיים, רמת גימור גבוהה ועיצובים עוצרי נשימה",
-        imageName: "medal.png",
-    },
-    {
-        id: 2,
-        header: "חדשנות",
-        description: "ווד ונדרס מביאים לכם את כל החידושים בתחום המטבחים",
-        imageName: "bulb.png",
-    },
-    {
-        id: 3,
-        header: "מומחיות",
-        description: "שילוב מנצח בין טכנולוגיות מתקדמות לבין אנשי מקצוע המתמחים בעיצוב מטבחים",
-        imageName: "star.png",
-    },
-];
+import axios from "axios";
+import GalleryCategoryModel from "../Models/GalleryCategoryModel";
+import ProjectModel from "../Models/ProjectModel";
+import QualityModel from "../Models/QualityModel";
+import RecommendationModel from "../Models/RecommendationModel";
+import appConfig from "../Utils/appConfig";
 
-const projectsData = [
-    {
-        id: 1,
-        title: "משפחת כהן",
-        description: "מטבח יוקרה מושלם למשפחת כהן",
-        imageName: "project1.jpg",
-    },
-    {
-        id: 2,
-        title: "משפחת לוי",
-        description: "מטבח כפרי וארונות חדרים.",
-        imageName: "project2.jpg",
-    },
-    {
-        id: 3,
-        title: "משפחת יצחק",
-        description: "ריהוט כללי לכל הבית",
-        imageName: "project3.jpg",
-    },
-    {
-        id: 4,
-        title: "משפחת ששון",
-        description: "ארונות הביתה וקיר.",
-        imageName: "project4.jpg",
-    },
-
-];
-
-const recommendationsData = [
-    {
-        id: 1,
-        clientName: "נתן כהן",
-        rank: 4,
-        comment: "שירות מעולה, ממליץ מאוד!",
-        date: "17-03-2024",
-    },
-    {
-        id: 2,
-        clientName: "יצחק לוי",
-        rank: 5,
-        comment: "מחיר הוגן, מוצר איכותי ושירות של חבר! רק אצל ווד ונדרס",
-        date: "21-02-2024",
-    },
-    {
-        id: 3,
-        clientName: "בארט סימפסון",
-        rank: 5,
-        comment: "מרגיש כמו בבית מלוכה! הצוות הכי מקצועי שנתקלתי בו!",
-        date: "28-11-2023",
-    },
-    {
-        id: 4,
-        clientName: "דני יצחקי",
-        rank: 2,
-        comment: "תקעו אותי חודש בזמני אספקה",
-        date: "16-08-2023",
-    },
-];
-const galleryData = [
-    {
-        id: 1,
-        type: "מטבחים",
-        typeShort: "מטבחי",
-        materials: ["פורמיקה", "מלמין", "פולימר"],
-        data: [
-            {
-                id: 1,
-                caption: "מטבח פורמיקה",
-                material: "פורמיקה",
-                imageName: "gallery-HDF1.jpg",
-            },
-            {
-                id: 2,
-                caption: "מטבח פורמיקה",
-                material: "פורמיקה",
-                imageName: "gallery-HDF2.webp",
-            },
-            {
-                id: 3,
-                caption: "מטבח פורמיקה",
-                material: "פורמיקה",
-                imageName: "gallery-HDF3.webp",
-            },
-            {
-                id: 4,
-                caption: "מטבח פורמיקה",
-                material: "פורמיקה",
-                imageName: "gallery-HDF4.jpg",
-            },
-            {
-                id: 5,
-                caption: "מטבח מלמין",
-                material: "מלמין",
-                imageName: "gallery-malamin1.jpeg",
-            },
-            {
-                id: 6,
-                caption: "מטבח מלמין",
-                material: "מלמין",
-                imageName: "gallery-malamin2.jpeg",
-            },
-            {
-                id: 7,
-                caption: "מטבח מלמין",
-                material: "מלמין",
-                imageName: "gallery-malamin3.jpeg",
-            },
-            {
-                id: 8,
-                caption: "מטבח מלמין",
-                material: "מלמין",
-                imageName: "gallery-malamin4.jpg",
-            },
-            {
-                id: 9,
-                caption: "מטבח פולימר",
-                material: "פולימר",
-                imageName: "gallery-polimer1.jpeg",
-            },
-            {
-                id: 10,
-                caption: "מטבח פולימר",
-                material: "פולימר",
-                imageName: "gallery-polimer2.jpg",
-            },
-            {
-                id: 11,
-                caption: "מטבח פולימר",
-                material: "פולימר",
-                imageName: "gallery-polimer3.jpeg",
-            },
-            {
-                id: 12,
-                caption: "מטבח פולימר",
-                material: "פולימר",
-                imageName: "gallery-polimer4.jpg",
-            },
-        ],
-    },
-    {
-        id: 2,
-        type: "ארונות",
-        typeShort: "",
-        materials: ["מלמין"],
-        data: [
-            {
-                id: 1,
-                caption: "ארון מלמין",
-                material: "מלמין",
-                imageName: "closet-malamin1.jpeg",
-            },
-            {
-                id: 2,
-                caption: "ארון מלמין",
-                material: "מלמין",
-                imageName: "closet-malamin2.jpeg",
-            },
-            {
-                id: 3,
-                caption: "ארון מלמין",
-                material: "מלמין",
-                imageName: "closet-malamin3.jpg",
-            },
-            {
-                id: 4,
-                caption: "ארון מלמין",
-                material: "מלמין",
-                imageName: "closet-malamin4.jpg",
-            },
-        ],
-    },
-];
-
-export default {
-    recommendationsData, aboutData, projectsData, galleryData
+class DataService {
+    public async getAllAboutUsData(): Promise<QualityModel[]> {
+        const response = await axios.get<QualityModel[]>(appConfig.aboutUsUrl);
+        const data = response.data;
+        return data;
+    }
+    public async getAllProjectsData(): Promise<ProjectModel[]> {
+        const response = await axios.get<ProjectModel[]>(appConfig.projectsUrl);
+        const data = response.data;
+        return data;
+    }
+    public async getAllRecommendationsData(): Promise<RecommendationModel[]> {
+        const response = await axios.get<RecommendationModel[]>(appConfig.recommendationsUrl);
+        const data = response.data;
+        return data;
+    }
+    public async getAllGalleryData(): Promise<GalleryCategoryModel[]> {
+        const response = await axios.get<GalleryCategoryModel[]>(appConfig.galleryUrl);
+        const data = response.data;
+        return data;
+    }
 }
 
+const dataService = new DataService();
+export default dataService;
