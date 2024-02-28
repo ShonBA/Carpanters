@@ -9,7 +9,7 @@ import { DataAction, DataActionTypes, dataStore } from "../Redux/DataState";
 class DataService {
     public async getAllAboutUsData(): Promise<QualityModel[]> {
         let data = dataStore.getState().aboutUs
-        if (data.length > 0) {
+        if (data.length === 0) {
             const response = await axios.get<QualityModel[]>(appConfig.aboutUsUrl);
             data = response.data;
         }
@@ -19,7 +19,7 @@ class DataService {
     }
     public async getAllProjectsData(): Promise<ProjectModel[]> {
         let data = dataStore.getState().projects
-        if (data.length > 0) {
+        if (data.length === 0) {
             const response = await axios.get<ProjectModel[]>(appConfig.projectsUrl);
             data = response.data;
         }
@@ -29,7 +29,7 @@ class DataService {
     }
     public async getAllRecommendationsData(): Promise<RecommendationModel[]> {
         let data = dataStore.getState().Recommendations
-        if (data.length > 0) {
+        if (data.length === 0) {
             const response = await axios.get<RecommendationModel[]>(appConfig.recommendationsUrl);
             data = response.data;
         }
@@ -39,7 +39,7 @@ class DataService {
     }
     public async getAllGalleryData(): Promise<GalleryCategoryModel[]> {
         let data = dataStore.getState().galleries
-        if (data.length > 0) {
+        if (data.length === 0) {
             const response = await axios.get<GalleryCategoryModel[]>(appConfig.galleryUrl);
             data = response.data;
         }
