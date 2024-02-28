@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Collapse } from "react-collapse";
 import GalleryCategoryModel from "../../../../Models/GalleryCategoryModel";
 import GalleryRow from "../GalleryRow/GalleryRow";
-import "./CategoryGallery.css";
+import "./CategoryGallery.scss";
 
 interface GalleryCategoryProps {
     category: GalleryCategoryModel;
