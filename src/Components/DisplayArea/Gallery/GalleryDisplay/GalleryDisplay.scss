@@ -29,5 +29,10 @@
 
     .ReactCollapse--collapse {
         transition: height 500ms;
+        h2{
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+        }
     }
 }
