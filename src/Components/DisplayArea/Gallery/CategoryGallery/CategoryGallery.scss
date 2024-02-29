@@ -1,5 +1,8 @@
+@use '../../../../index.scss' as i;
 .CategoryGallery {
+    border: 1px solid i.$second_color;
     >h2 {
-        margin-bottom: 0;
+        margin: 0;
+        // margin-top: 0;
     }
 }
