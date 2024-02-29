@@ -39,8 +39,8 @@ function GalleryRow(props: GalleryRowData): JSX.Element {
         <div className="GalleryRow">
             <h2>{isTypeShort} {props.material}
                 {isRowOpen ?
-                    <Hamburger toggled={isRowOpen} toggle={setIsRowOpen} /> :
-                    <Hamburger toggled={isRowOpen} toggle={setIsRowOpen} />}
+                    <Hamburger toggled={isRowOpen} toggle={setIsRowOpen} size={20} /> :
+                    <Hamburger toggled={isRowOpen} toggle={setIsRowOpen} size={20} />}
             </h2>
             <Collapse isOpened={isRowOpen}>
                 <div className="gallery__row">

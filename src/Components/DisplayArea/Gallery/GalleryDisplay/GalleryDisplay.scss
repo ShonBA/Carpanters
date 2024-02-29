@@ -1,6 +1,14 @@
 @use '../../../../index.scss' as i;
 
 .GalleryDisplay {
+    .categorySection {
+        height: fit-content;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
     h2 {
         background-color: i.$third_color;
         color: i.$first_color;
@@ -29,5 +37,17 @@
 
     .ReactCollapse--collapse {
         transition: height 500ms;
+        background-color: i.$third_color;
+
+        h2 {
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            box-shadow: none;
+            border-radius: 0;
+            // border: 1px solid i.$second_color;
+            border-top: 1px solid i.$second_color;
+            margin: 0;
+        }
     }
 }
