@@ -1,13 +1,16 @@
 .GalleryRow {
-    // .gallery__row {
-    // h2 {
-    //     font-size: 10px;
-    //     background-color: red;
-    // }
-    
+
     .react-multi-carousel-list {
         width: 100%;
     }
+
+    .react-multiple-carousel__arrow--left {
+        left: calc(1% + 1px);
+    }
+
+    .react-multiple-carousel__arrow--right {
+        right: calc(1% + 1px);
+    }
 }
 
-// }
+
