@@ -1,3 +1,28 @@
+@use '../../../index.scss' as i;
+
 .AboutUs {
-	
+    .aboutUSHeaderContainer {
+        padding: 50px 30px 50px 50px;
+
+        img {
+            height: 50vh;
+            width: 100%;
+            position: relative;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 30px;
+            width: fit-content;
+            font-size: 2rem;
+            background-color: i.$fourth_color;
+            color: i.$first_color;
+            text-align: right;
+            position: absolute;
+            top: 300px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px 0px 0px 10px;
+        }
+    }
 }
