@@ -7,13 +7,13 @@ class AppConfig {
     public readonly galleryUrl: string = "https://raw.githubusercontent.com/ShonBA/Carpanters/main/public/JSON/carpentersGalleryData.json";
 
     // Routes
-    public readonly HomeRoute: string = "Carpenters/home";
-    public readonly GalleryRoute: string = "Carpenters/gallery";
-    public readonly ProjectsRoute: string = "Carpenters/projects";
-    public readonly CustomCarpenterRoute: string = "Carpenters/custom-carpentry";
-    public readonly AboutRoute: string = "Carpenters/about";
-    public readonly RecommendationRoute: string = "Carpenters/recommendations";
-    public readonly ContactUsRoute: string = "Carpenters/contact-us";
+    public readonly HomeRoute: string = "/home";
+    public readonly GalleryRoute: string = "/gallery";
+    public readonly ProjectsRoute: string = "/projects";
+    public readonly CustomCarpenterRoute: string = "/custom-carpentry";
+    public readonly AboutRoute: string = "/about";
+    public readonly RecommendationRoute: string = "/recommendations";
+    public readonly ContactUsRoute: string = "/contact-us";
 
 }
 
