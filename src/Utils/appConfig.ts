@@ -3,7 +3,7 @@ class AppConfig {
     // Axios Urls
     public readonly aboutUsUrl: string = "https://raw.githubusercontent.com/ShonBA/Carpanters/main/public/JSON/carpentersAboutData.json";
     public readonly projectsUrl: string = "https://raw.githubusercontent.com/ShonBA/Carpanters/main/public/JSON/carpentersProjectsData.json";
-    public readonly recommendationsUrl: string = "https://raw.githubusercontent.com/ShonBA/Carpanters/main/public/JSON/carpentersGalleryData.json";
+    public readonly recommendationsUrl: string = "https://raw.githubusercontent.com/ShonBA/Carpanters/main/public/JSON/carpentersRecommendationsData.json";
     public readonly galleryUrl: string = "https://raw.githubusercontent.com/ShonBA/Carpanters/main/public/JSON/carpentersGalleryData.json";
 
     // Routes
