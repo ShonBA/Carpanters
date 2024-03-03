@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Carpanters/static/css/main.5687631c.css",
+    "main.js": "/Carpanters/static/js/main.3c72b466.js",
+    "static/media/backround_image2.jpg": "/Carpanters/static/media/backround_image2.77e4f7848f7a29ad0e2a.jpg",
+    "static/media/backround_image3.jpeg": "/Carpanters/static/media/backround_image3.28ad22d2838052087e9e.jpeg",
+    "static/media/gallery-HDF4.jpg": "/Carpanters/static/media/gallery-HDF4.6ed380a21c8f6fbc0312.jpg",
+    "static/media/backround_image1.jpg": "/Carpanters/static/media/backround_image1.fbc8b1053c17649620ee.jpg",
+    "static/media/gallery-malamin4.jpg": "/Carpanters/static/media/gallery-malamin4.6d01f4ea0b136fce4cd5.jpg",
+    "static/media/closet-malamin4.jpg": "/Carpanters/static/media/closet-malamin4.d07e505e54f6c916f2e5.jpg",
+    "static/media/gallery-HDF1.jpg": "/Carpanters/static/media/gallery-HDF1.1797107007fbdb511ffa.jpg",
+    "static/media/closet-malamin3.jpg": "/Carpanters/static/media/closet-malamin3.ada8a0e21438233a0ee2.jpg",
+    "static/media/gallery-polimer2.jpg": "/Carpanters/static/media/gallery-polimer2.319168957625b24a9de1.jpg",
+    "static/media/gallery-HDF3.webp": "/Carpanters/static/media/gallery-HDF3.a567478def1101439f7c.webp",
+    "static/media/project2.jpg": "/Carpanters/static/media/project2.e5254b4a0227872da3b1.jpg",
+    "static/media/gallery-polimer4.jpg": "/Carpanters/static/media/gallery-polimer4.1df81185463d3ebd15e0.jpg",
+    "static/media/gallery-HDF2.webp": "/Carpanters/static/media/gallery-HDF2.48840f1c890c3700b419.webp",
+    "static/media/project1.jpg": "/Carpanters/static/media/project1.9e4000766b5b36565669.jpg",
+    "static/media/project4.jpg": "/Carpanters/static/media/project4.4be1774e04f7f05bfb9a.jpg",
+    "static/media/project3.jpg": "/Carpanters/static/media/project3.87ac154f3724aedcee55.jpg",
+    "static/media/revicons.eot": "/Carpanters/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/Carpanters/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/WoodWonders-logo.png": "/Carpanters/static/media/WoodWonders-logo.c61f3fdde85af01651df.png",
+    "static/media/revicons.woff": "/Carpanters/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/Carpanters/index.html",
+    "main.5687631c.css.map": "/Carpanters/static/css/main.5687631c.css.map",
+    "main.3c72b466.js.map": "/Carpanters/static/js/main.3c72b466.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5687631c.css",
+    "static/js/main.3c72b466.js"
+  ]
+}
