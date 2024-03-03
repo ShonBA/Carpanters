@@ -15,8 +15,6 @@ function GalleryRow(props: GalleryRowData): JSX.Element {
 
     const [isRowOpen, setIsRowOpen] = useState<boolean>(false);
 
-    const isTypeShort = props.category.typeShort === "" ? props.category.type : props.category.typeShort
-
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
@@ -37,7 +35,7 @@ function GalleryRow(props: GalleryRowData): JSX.Element {
 
     return (
         <div className="GalleryRow">
-            <h2>{isTypeShort} {props.material}
+            <h2> {props.material}
                 {isRowOpen ?
                     <Hamburger toggled={isRowOpen} toggle={setIsRowOpen} size={20} /> :
                     <Hamburger toggled={isRowOpen} toggle={setIsRowOpen} size={20} />}

@@ -3,6 +3,7 @@
 .Gallery {
     .galleryHeaderContainer {
         padding: 50px 30px 50px 50px;
+
         img {
             height: 50vh;
             width: 100%;
@@ -23,6 +24,21 @@
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             border-radius: 10px 0px 0px 10px;
         }
+    }
+
+    .galleryParaContainer {
+        width: 75%;
+        margin: 40px auto;
+        padding: 50px 40px;
+        background-color: i.$first_color;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        h2 {
+            margin: 0 0 40px 0;
+            font-size: 2rem;
+            color: i.$third_color;
+        }
+
     }
 
     .gallery {
