@@ -5,6 +5,7 @@ class AppConfig {
     public readonly projectsUrl: string = "https://raw.githubusercontent.com/ShonBA/Carpanters/main/public/JSON/carpentersProjectsData.json";
     public readonly recommendationsUrl: string = "https://raw.githubusercontent.com/ShonBA/Carpanters/main/public/JSON/carpentersRecommendationsData.json";
     public readonly galleryUrl: string = "https://raw.githubusercontent.com/ShonBA/Carpanters/main/public/JSON/carpentersGalleryData.json";
+    public readonly galleryMaterialsUrl: string = "https://raw.githubusercontent.com/ShonBA/Carpanters/main/public/JSON/carpentersMaterialsData.json";
 
     // Routes
     public readonly HomeRoute: string = "/home";
