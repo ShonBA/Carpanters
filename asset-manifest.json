@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Carpanters/static/css/main.5687631c.css",
-    "main.js": "/Carpanters/static/js/main.c779e4a9.js",
+    "main.css": "/Carpanters/static/css/main.8c6e6349.css",
+    "main.js": "/Carpanters/static/js/main.e660dec9.js",
     "static/media/backround_image2.jpg": "/Carpanters/static/media/backround_image2.77e4f7848f7a29ad0e2a.jpg",
     "static/media/backround_image3.jpeg": "/Carpanters/static/media/backround_image3.28ad22d2838052087e9e.jpeg",
     "static/media/gallery-HDF4.jpg": "/Carpanters/static/media/gallery-HDF4.6ed380a21c8f6fbc0312.jpg",
@@ -23,11 +23,11 @@
     "static/media/WoodWonders-logo.png": "/Carpanters/static/media/WoodWonders-logo.c61f3fdde85af01651df.png",
     "static/media/revicons.woff": "/Carpanters/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/Carpanters/index.html",
-    "main.5687631c.css.map": "/Carpanters/static/css/main.5687631c.css.map",
-    "main.c779e4a9.js.map": "/Carpanters/static/js/main.c779e4a9.js.map"
+    "main.8c6e6349.css.map": "/Carpanters/static/css/main.8c6e6349.css.map",
+    "main.e660dec9.js.map": "/Carpanters/static/js/main.e660dec9.js.map"
   },
   "entrypoints": [
-    "static/css/main.5687631c.css",
-    "static/js/main.c779e4a9.js"
+    "static/css/main.8c6e6349.css",
+    "static/js/main.e660dec9.js"
   ]
 }
