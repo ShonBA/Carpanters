@@ -27,16 +27,16 @@
     }
 
     .galleryParaContainer {
-        width: 75%;
+        width: 85%;
         margin: 40px auto;
-        padding: 50px 40px;
-        background-color: i.$first_color;
+        padding: 40px 40px;
+        background-color: i.$fourth_color;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
         h2 {
             margin: 0 0 40px 0;
             font-size: 2rem;
-            color: i.$third_color;
+            color: i.$first_color;
         }
 
     }

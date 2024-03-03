@@ -37,7 +37,7 @@ function GalleryMaterials(): JSX.Element {
             <CarouselLib responsive={responsive}
                 infinite={true}
                 autoPlay={true}
-                autoPlaySpeed={5000}
+                autoPlaySpeed={2500}
                 transitionDuration={1500}
                 removeArrowOnDeviceType={["tablet", "mobile"]}
             >
