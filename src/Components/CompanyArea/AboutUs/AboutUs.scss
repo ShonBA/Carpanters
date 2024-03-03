@@ -2,7 +2,7 @@
 
 .AboutUs {
     .aboutUSHeaderContainer {
-        padding: 50px 30px 50px 50px;
+        padding: 50px 30px 10px 50px;
 
         img {
             height: 50vh;
@@ -23,6 +23,31 @@
             top: 300px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             border-radius: 10px 0px 0px 10px;
+        }
+    }
+
+    .aboutUsParagraphContainer {
+        font-family: 'Arial', sans-serif;
+        background-color: i.$third_color;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 40px 150px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+
+    .aboutUsParagraphContainer p {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .recommendationContainer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contactUsFrom {
+        .formContainer {
+            margin: 60px auto;
         }
     }
 }
