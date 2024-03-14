@@ -11,6 +11,8 @@
         padding: 20px;
         background-color: i.$third_color;
         transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        animation: cardAnim 2s ease 0s infinite normal forwards;
+        ;
 
         img {
             box-sizing: border-box;
@@ -26,6 +28,32 @@
         &:hover {
             transform: scale(1.05);
             background-color: darken(i.$third_color, 10%);
+        }
+    }
+
+    @keyframes cardAnim {
+        0% {
+            transform: translate(0);
+        }
+
+        20% {
+            transform: translate(2px, -2px);
+        }
+
+        40% {
+            transform: translate(2px, 2px);
+        }
+
+        60% {
+            transform: translate(-2px, 2px);
+        }
+
+        80% {
+            transform: translate(-2px, -2px);
+        }
+
+        100% {
+            transform: translate(0);
         }
     }
 

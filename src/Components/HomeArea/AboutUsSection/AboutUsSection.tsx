@@ -3,10 +3,13 @@ import QualityModel from "../../../Models/QualityModel";
 import dataService from "../../../Service/DataArea";
 import "./AboutUsSection.scss";
 import QualityCard from "./QualityCard/QualityCard";
+import { useInView } from 'react-intersection-observer';
 
 function AboutUsSection(): JSX.Element {
 
     const [aboutData, setAboutData] = useState<QualityModel[]>([]);
+
+    const [aboutHeaderRef, aboutHeaderInView] = useInView({ triggerOnce: true });
 
     useEffect(() => {
         dataService.getAllAboutUsData()
@@ -16,7 +19,7 @@ function AboutUsSection(): JSX.Element {
 
     return (
         <div className="AboutUsSection">
-            <div className="homeAboutContainer">
+            <div className={`homeAboutContainer ${aboutHeaderInView ? `visible` : ``}`} ref={aboutHeaderRef}>
                 <h1>ווד ונדרס בע"מ</h1>
                 <p>ווד ונדרס הינה חברה ותיקה בעלת ניסיון עשיר של 15 שנים בייצור מטבחים אשר שמה לעצמה למטרה לייצר מטבחים פונקציונליים בעיצוב מעורר השראה,
                     המשלבים טכנולוגיה מתקדמת,
