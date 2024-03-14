@@ -1,5 +1,36 @@
+@use '../../../index.scss' as i;
+
 .ContactUs {
+    height: 100%;
     display: flex;
-    padding: 250px 0;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    .mapContainer {
+        width: 620px;
+        height: 200px;
+        background-color: i.$second_color;
+        border: 1px solid i.$first_color;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        >* {
+            margin: 10px;
+        }
+
+        .SocialIcons {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: start;
+
+
+            a {
+                font-size: 36px;
+                color: black;
+            }
+        }
+    }
 }

@@ -18,7 +18,7 @@
     }
 
     .form-content {
-        justify-content: flex-start;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -100,15 +100,15 @@
     }
 
     .form-icons {
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        bottom: 15px;
-        left: 40px;
-        a{
-            padding: 0 5px;
-            color: black;
-            scale: 1.1;
+        .SocialIcons {
+            // position: absolute;
+            display: flex;
+
+            a {
+                padding: 0 5px;
+                color: black;
+                scale: 1.1;
+            }
         }
     }
 }

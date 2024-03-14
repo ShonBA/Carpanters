@@ -1,7 +1,5 @@
 import { useForm } from '@formspree/react';
-import { CiFacebook, CiInstagram } from "react-icons/ci";
-import { FaWhatsapp } from "react-icons/fa";
-import { NavLink } from 'react-router-dom';
+import SocialIcons from '../SocialIcons/SocialIcons';
 import "./ContactUsForm.scss";
 
 
@@ -22,17 +20,9 @@ function ContactUsForm(): JSX.Element {
             <div className='form-content'>
                 <h2>דברו איתנו!</h2>
                 <p>אנו זמינים עבורכם לכל שאלה. השאירו פרטים ואנו מבטיחים לחזור אליכם תוך 2 ימי עסקים.</p>
-            </div>
-            <div className='form-icons'>
-                <NavLink to={"#"}>
-                    <FaWhatsapp />
-                </NavLink>
-                <NavLink to={"#"}>
-                    <CiInstagram />
-                </NavLink>
-                <NavLink to={"#"}>
-                    <CiFacebook />
-                </NavLink>
+                <div className='form-icons'>
+                    <SocialIcons />
+                </div>
             </div>
         </form>
     );
