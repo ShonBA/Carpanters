@@ -2,11 +2,13 @@
 
 .RecommendationCard {
     .recommendation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 250px;
-        height: 130px;
+        height: 188px;
         border: 1px solid #ddd;
         padding: 15px;
-        margin-bottom: 15px;
         border-radius: 8px;
         background-color: i.$first_color;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
