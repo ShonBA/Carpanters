@@ -24,7 +24,7 @@ function AboutUs(): JSX.Element {
     return (
         <div className="AboutUs">
             <div className="aboutUSHeaderContainer">
-                <img src={x} />
+                {/* <img src={x} /> */}
                 <h2>מי אנחנו?</h2>
             </div>
             <h1>אנחנו ווד וונדרס בע"מ, המקום בו האומנות נפגשת עם המצוינות!</h1>

@@ -8,8 +8,15 @@
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
+
     .aboutUSHeaderContainer {
         padding: 50px 30px 10px 50px;
+        background-image: url('../../../Assets/Images/backround_image1.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
 
         img {
             height: 50vh;
@@ -49,13 +56,15 @@
 
 
     .gridContainer {
+        background-color: i.$second_color;
         box-sizing: border-box;
-        width: 80vw;
+        width: 100vw;
+        padding: 0vw 5vw 40px 5vw;
         display: grid;
         margin: auto;
         margin-top: 40px;
         grid-template-columns: 50% 50%;
-        border: 2px solid i.$first_color;
+        // border: 2px solid i.$first_color;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
         img {
@@ -64,6 +73,9 @@
         }
 
         p {
+            background-color: transparent;
+            height: 100%;
+            margin: 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -73,7 +85,7 @@
     }
 
     .parallax {
-        margin: 40px 0px;
+        margin: 0px 0px 40px 0px;
         height: 50vh;
         background-image: url('../../../Assets/Images/logs.png');
         background-attachment: fixed;
