@@ -8,12 +8,12 @@ function ContactUs(): JSX.Element {
     useTitle("Contact Us")
     return (
         <div className="ContactUs">
-            <div className="contactContainer">
-                <ContactUsForm />
-            </div>
             <div className="mapContainer">
                 <Map />
-                <SocialIcons />
+                <SocialIcons withText={true} />
+            </div>
+            <div className="contactContainer">
+                <ContactUsForm withSocials={false} />
             </div>
         </div>
     );

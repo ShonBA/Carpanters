@@ -2,8 +2,10 @@ import { useForm } from '@formspree/react';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import "./ContactUsForm.scss";
 
-
-function ContactUsForm(): JSX.Element {
+interface SocialIconsProps {
+    withSocials: boolean;
+}
+function ContactUsForm(props: SocialIconsProps): JSX.Element {
 
     const [state, handleSubmit] = useForm("xnqevpzg");
     if (state.succeeded) {
@@ -20,9 +22,11 @@ function ContactUsForm(): JSX.Element {
             <div className='form-content'>
                 <h2>דברו איתנו!</h2>
                 <p>אנו זמינים עבורכם לכל שאלה. השאירו פרטים ואנו מבטיחים לחזור אליכם תוך 2 ימי עסקים.</p>
-                <div className='form-icons'>
-                    <SocialIcons />
-                </div>
+                {props.withSocials ?
+                    <div className='form-icons'>
+                        <SocialIcons withText={false} />
+                    </div> :
+                    <div></div>}
             </div>
         </form>
     );
