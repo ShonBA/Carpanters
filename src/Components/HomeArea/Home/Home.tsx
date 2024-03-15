@@ -15,7 +15,7 @@ function Home(): JSX.Element {
             <AboutUsSection />
             <ProjectsSection />
             <RecommendationsSection />
-            <ContactUsForm />
+            <ContactUsForm withSocials={true} />
         </div>
     );
 }

@@ -1,4 +1,7 @@
 .GalleryRow {
+    h2 {
+        cursor: pointer;
+    }
 
     .react-multi-carousel-list {
         width: 100%;
@@ -12,5 +15,3 @@
         right: calc(1% + 1px);
     }
 }
-
-

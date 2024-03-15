@@ -62,7 +62,7 @@ function AboutUs(): JSX.Element {
             </div>
             <h1>צרו קשר עוד היום ותנו למומחים שלנו לדאוג לכם!</h1>
             <div className="contactUsFrom">
-                <ContactUsForm />
+                <ContactUsForm withSocials={true}/>
             </div>
         </div>
     );

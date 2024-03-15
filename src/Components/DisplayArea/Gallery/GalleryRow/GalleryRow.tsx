@@ -35,10 +35,10 @@ function GalleryRow(props: GalleryRowData): JSX.Element {
 
     return (
         <div className="GalleryRow">
-            <h2> {props.material}
+            <h2 onClick={() => setIsRowOpen(!isRowOpen)}> {props.material}
                 {isRowOpen ?
-                    <Hamburger toggled={isRowOpen} toggle={setIsRowOpen} size={20} /> :
-                    <Hamburger toggled={isRowOpen} toggle={setIsRowOpen} size={20} />}
+                    <Hamburger toggled={isRowOpen} size={20} /> :
+                    <Hamburger toggled={isRowOpen} size={20} />}
             </h2>
             <Collapse isOpened={isRowOpen}>
                 <div className="gallery__row">
