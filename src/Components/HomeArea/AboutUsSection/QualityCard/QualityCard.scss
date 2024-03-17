@@ -1,18 +1,21 @@
 @use '../../../../index.scss' as i;
 
 .QualityCard {
-
     .qualityCard {
-        border-radius: 25px;
-        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-            rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        width: 250px;
-        height: 150px;
-        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         background-color: i.$third_color;
-        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-        animation: cardAnim 2s ease 0s infinite normal forwards;
-        ;
+
+
+        &.visible {
+            // animation: cardAnim 2s ease 0s 1 normal forwards;
+        }
+
+        background-color: 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
 
         img {
             box-sizing: border-box;
@@ -26,35 +29,52 @@
         }
 
         &:hover {
-            transform: scale(1.05);
-            background-color: darken(i.$third_color, 10%);
+            transform: translateX(-20px);
+            // background-color: darken(i.$third_color, 5%);
         }
     }
 
     @keyframes cardAnim {
         0% {
-            transform: translate(0);
+            animation-timing-function: ease-in;
+            opacity: 0;
+            transform: translateX(-250px);
         }
 
-        20% {
-            transform: translate(2px, -2px);
+        38% {
+            animation-timing-function: ease-out;
+            opacity: 1;
+            transform: translateX(0);
         }
 
-        40% {
-            transform: translate(2px, 2px);
+        55% {
+            animation-timing-function: ease-in;
+            transform: translateX(-68px);
         }
 
-        60% {
-            transform: translate(-2px, 2px);
+        72% {
+            animation-timing-function: ease-out;
+            transform: translateX(0);
         }
 
-        80% {
-            transform: translate(-2px, -2px);
+        81% {
+            animation-timing-function: ease-in;
+            transform: translateX(-28px);
+        }
+
+        90% {
+            animation-timing-function: ease-out;
+            transform: translateX(0);
+        }
+
+        95% {
+            animation-timing-function: ease-in;
+            transform: translateX(-8px);
         }
 
         100% {
-            transform: translate(0);
+            animation-timing-function: ease-out;
+            transform: translateX(0);
         }
     }
-
 }

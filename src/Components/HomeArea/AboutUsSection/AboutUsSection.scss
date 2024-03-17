@@ -1,39 +1,68 @@
 @use '../../../index.scss' as i;
 
 .AboutUsSection {
-    margin: 25px 0;
+    height: 50vh;
+    margin: 20px 10vh;
+    padding: 5px 25px;
+    display: grid;
+    grid-template-columns: 3.5fr 1.5fr;
+    column-gap: 20px;
+    // background-color: i.$third_color;
+    box-sizing: border-box;
+    // box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    position: relative;
 
-    h1 {
-        margin: 0;
-        font-weight: normal;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        border: 2px solid i.$first_color;
+        animation: clippath 3s infinite linear;
+    }
+
+    &::after {
+        animation: clippath 3s infinite -1.5s linear;
     }
 
     .homeAboutContainer {
+        padding: 0px 20vh;
         display: flex;
         flex-direction: column;
-        margin: 0px 200px 25px 200px;
-        border-radius: 25px;
-        padding: 50px;
-        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-        position: relative;
-        animation: aboutHeaderAnim 2s ease 0s 1 normal forwards;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        background-color: i.$third_color;
 
-
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            right: -10px;
-            bottom: -10px;
-            border: 2px solid i.$first_color;
-            animation: clippath 3s infinite linear;
-            border-radius: 25px;
+        &.visible {
+            animation: aboutHeaderAnim 2s ease 0s 1 normal forwards;
         }
 
-        &::after {
-            animation: clippath 3s infinite -1.5s linear;
+        h1 {
+            margin: 0;
+            font-weight: normal;
+        }
+    }
+
+    .qualityCardContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    @keyframes aboutHeaderAnim {
+        0% {
+            opacity: 0;
+            transform: rotateY(70deg);
+            transform-origin: right;
+        }
+
+        100% {
+            opacity: 1;
+            transform: rotateY(0);
+            transform-origin: right;
         }
     }
 
@@ -57,22 +86,5 @@
         }
     }
 
-    .qualityCardContainer {
-        display: flex;
-        margin: 0 200px;
-        justify-content: center;
-        gap: 100px;
-    }
 
-    @keyframes aboutHeaderAnim {
-        0% {
-            transform: scale(0);
-        }
-
-        100% {
-            transform: scale(1);
-        }
-    }
-
-    
 }
