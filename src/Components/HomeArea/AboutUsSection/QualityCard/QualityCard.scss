@@ -11,7 +11,7 @@
 
 
         &.visible {
-            // animation: cardAnim 2s ease 0s 1 normal forwards;
+            animation: cardAnim 2s ease 0s 1 normal forwards;
         }
 
         background-color: 0.3s ease-in-out;
@@ -30,7 +30,6 @@
 
         &:hover {
             transform: translateX(-20px);
-            // background-color: darken(i.$third_color, 5%);
         }
     }
 

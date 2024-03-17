@@ -12,12 +12,12 @@ function Gallery(): JSX.Element {
                 <img src={x} />
                 <h2>גלריית עבודות</h2>
             </div>
+            <div className="gallery">
+                <GalleryDisplay />
+            </div>
             <div className="galleryParaContainer">
                 <h2>עם מה אנחנו עובדים ?</h2>
                 <GalleryMaterials />
-            </div>
-            <div className="gallery">
-                <GalleryDisplay />
             </div>
         </div>
     );
