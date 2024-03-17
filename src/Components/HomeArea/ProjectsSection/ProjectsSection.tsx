@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import ProjectModel from "../../../Models/ProjectModel";
 import dataService from "../../../Service/DataArea";
 import ProjectCard from "./ProjectCard/ProjectCard";
@@ -7,6 +8,8 @@ import "./ProjectsSection.scss";
 function ProjectsSection(): JSX.Element {
 
     const [feProjectsData, setFeProjectsData] = useState<ProjectModel[]>([]);
+
+    const [projectHeaderRef, projectHeaderInView] = useInView({ triggerOnce: true });
 
     useEffect(() => {
         dataService.getAllProjectsData()
@@ -17,7 +20,7 @@ function ProjectsSection(): JSX.Element {
 
     return (
         <div className="ProjectsSection">
-            <div className="projectsHeader">
+            <div className={`projectsHeader ${projectHeaderInView ? `visible` : ``}`} ref={projectHeaderRef}>
                 <h3>
                     קצת פרוייקטים שלנו:
                 </h3>

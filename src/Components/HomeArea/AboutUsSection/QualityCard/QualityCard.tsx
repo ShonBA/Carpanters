@@ -11,8 +11,8 @@ function QualityCard(props: AboutProps): JSX.Element {
     const [cardRef, cardInView] = useInView({ triggerOnce: true });
 
     return (
-        <div className="QualityCard" ref={cardRef}>
-            <div className={`qualityCard ${cardInView ? `visible` : ``}`}>
+        <div className={`QualityCard ${cardInView ? `visible` : ``}`} ref={cardRef}>
+            <div className={`qualityCard `}>
                 <img src={require(`../../../../Assets/Images/${props.quality.imageName}`)} />
                 <h3>{props.quality.header}</h3>
                 <p>{props.quality.description}</p>

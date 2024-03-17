@@ -16,7 +16,6 @@ function RecommendationCard(props: RecommendationProps): JSX.Element {
                     <StarsDisplay rank={props.recommendation.rank} />
                 </div>
                 <div className="comment">{props.recommendation.comment}</div>
-
             </div>
         </div>
     );
