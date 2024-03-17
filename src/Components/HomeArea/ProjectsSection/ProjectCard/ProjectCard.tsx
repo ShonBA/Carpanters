@@ -1,8 +1,8 @@
 import { useInView } from "react-intersection-observer";
-import ProjectModel from "../../../../Models/ProjectModel";
-import "./ProjectCard.scss";
 import { NavLink } from "react-router-dom";
+import ProjectModel from "../../../../Models/ProjectModel";
 import appConfig from "../../../../Utils/appConfig";
+import "./ProjectCard.scss";
 
 interface ProjectProps {
     project: ProjectModel

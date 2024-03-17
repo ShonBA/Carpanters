@@ -18,6 +18,7 @@ class DataService {
         dataStore.dispatch(action)
         return data;
     }
+
     public async getAllProjectsData(): Promise<ProjectModel[]> {
         let data = dataStore.getState().projects
         if (data.length === 0) {
@@ -28,6 +29,13 @@ class DataService {
         dataStore.dispatch(action)
         return data;
     }
+
+    public async getProjectDataByUuid(uuid: string): Promise<ProjectModel> {
+        const projects = await this.getAllProjectsData();
+        const project = projects.find(p => p.uuid === uuid);
+        return project;
+    }
+
     public async getAllRecommendationsData(): Promise<RecommendationModel[]> {
         let data = dataStore.getState().Recommendations
         if (data.length === 0) {
@@ -38,6 +46,7 @@ class DataService {
         dataStore.dispatch(action)
         return data;
     }
+
     public async getAllGalleryData(): Promise<GalleryCategoryModel[]> {
         let data = dataStore.getState().galleries
         if (data.length === 0) {
@@ -48,6 +57,7 @@ class DataService {
         dataStore.dispatch(action)
         return data;
     }
+
     public async getAllGalleryMaterialsData(): Promise<GalleryMaterialModel[]> {
         let data = dataStore.getState().galleryMaterials
         if (data.length === 0) {
