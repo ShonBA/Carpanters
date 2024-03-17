@@ -42,7 +42,7 @@ function GalleryMaterials(): JSX.Element {
                 removeArrowOnDeviceType={["tablet", "mobile"]}
             >
 
-                {feGalleryData.map(m => <MaterialsCard key={m.id} material={m} />)}
+                {feGalleryData.map(m => <MaterialsCard key={m.uuid} material={m} />)}
 
             </CarouselLib>
         </div>

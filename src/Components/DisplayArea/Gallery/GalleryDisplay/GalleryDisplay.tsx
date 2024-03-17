@@ -16,7 +16,7 @@ function GalleryDisplay(): JSX.Element {
     return (
         <div className="GalleryDisplay">
             <div className="categorySection">
-                {feGalleryData.length > 0 ? feGalleryData.map(c => <CategoryGallery key={c.id} category={c} />) : <div></div>}
+                {feGalleryData.length > 0 ? feGalleryData.map(c => <CategoryGallery key={c.uuid} category={c} />) : <div></div>}
             </div>
         </div>
     );

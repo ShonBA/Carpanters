@@ -31,7 +31,7 @@ function AboutUsSection(): JSX.Element {
                 </p>
             </div>
             <div className="qualityCardContainer">
-                {aboutData.map(about => <QualityCard key={about.id} quality={about} />)}
+                {aboutData.map(about => <QualityCard key={about.uuid} quality={about} />)}
             </div>
         </div>
     );

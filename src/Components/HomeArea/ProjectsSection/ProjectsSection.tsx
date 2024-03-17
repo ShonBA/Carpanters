@@ -26,7 +26,7 @@ function ProjectsSection(): JSX.Element {
                 </h3>
             </div>
             <div className="projectsCardContainer">
-                {feProjectsData.map(project => <ProjectCard key={project.id} project={project} />)}
+                {feProjectsData.map(project => <ProjectCard key={project.uuid} project={project} />)}
             </div>
         </div>
     );

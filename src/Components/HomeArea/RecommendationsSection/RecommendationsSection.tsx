@@ -21,7 +21,7 @@ function RecommendationsSection(): JSX.Element {
                 <h2>הלקוחות שלנו: </h2>
             </div>
             <div className="recommendationsList">
-                {feRecommendationsData.map((recommendation) => <RecommendationCard key={recommendation.id} recommendation={recommendation} />)}
+                {feRecommendationsData.map((recommendation) => <RecommendationCard key={recommendation.uuid} recommendation={recommendation} />)}
             </div>
         </div>
     );

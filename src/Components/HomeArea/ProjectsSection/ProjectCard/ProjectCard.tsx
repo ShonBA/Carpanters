@@ -12,7 +12,7 @@ function ProjectCard(props: ProjectProps): JSX.Element {
     const [projectCardRef, projectCardInView] = useInView({ triggerOnce: true });
 
     return (
-        <NavLink to={appConfig.ProjectsRoute + `/${props.project.id}`}>
+        <NavLink to={appConfig.ProjectsRoute + `/${props.project.uuid}`}>
             <div className={`ProjectCard ${projectCardInView ? `visible` : ``}`} ref={projectCardRef}>
                 <img src={require(`../../../../Assets/Images/${props.project.imageName}`)} />
                 <div className="card-content">

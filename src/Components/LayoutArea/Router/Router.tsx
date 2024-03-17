@@ -20,7 +20,7 @@ function Router(): JSX.Element {
                 <Route path={appConfig.AboutRoute} element={<AboutUs />}></Route>
                 <Route path={appConfig.RecommendationRoute} element={<Recommendations />}></Route>
                 <Route path={appConfig.ContactUsRoute} element={<ContactUs />}></Route>
-                <Route path={appConfig.ProjectsRoute + ":id"} element={<ProjectsPage />}></Route>
+                <Route path={appConfig.ProjectsRoute + ":uuid"} element={<ProjectsPage />}></Route>
 
                 {/* Default Routes */}
                 <Route path="/" element={<Navigate to={appConfig.HomeRoute} />} />

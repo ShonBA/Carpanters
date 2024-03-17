@@ -9,7 +9,7 @@ interface RecommendationProps {
 function RecommendationCard(props: RecommendationProps): JSX.Element {
     return (
         <div className="RecommendationCard">
-            <div key={props.recommendation.id} className="recommendation">
+            <div key={props.recommendation.uuid} className="recommendation">
                 <div className="clientName">{props.recommendation.clientName}</div>
                 <div className="date">{props.recommendation.date}</div>
                 <div className="rank">

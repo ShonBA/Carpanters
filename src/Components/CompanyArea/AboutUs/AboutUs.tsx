@@ -48,7 +48,7 @@ function AboutUs(): JSX.Element {
 
             <h1>אל תאמינו לנו, תאמינו להם:</h1>
             <div className="recommendationContainer">
-                {feRecommendationsData.map((recommendation) => <RecommendationCard key={recommendation.id} recommendation={recommendation} />)}
+                {feRecommendationsData.map((recommendation) => <RecommendationCard key={recommendation.uuid} recommendation={recommendation} />)}
             </div>
             <h1>צרו קשר עוד היום ותנו למומחים שלנו לדאוג לכם!</h1>
             <div className="contactUsFrom">
