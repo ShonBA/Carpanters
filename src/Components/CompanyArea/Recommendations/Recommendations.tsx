@@ -6,7 +6,9 @@ function Recommendations(): JSX.Element {
 
     return (
         <div className="Recommendations">
-            Recommendations
+            <div className="recommendationsHeaderContainer">
+                <h2>לקוחות משתפים</h2>
+            </div>
         </div>
     );
 }
