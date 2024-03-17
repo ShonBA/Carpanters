@@ -1,24 +1,24 @@
 [
   {
-    "id": 1,
+    "uuid": "671b1b8d-3ec2-48cb-bc33-3457ffeb1698",
     "title": "משפחת כהן",
     "description": "מטבח יוקרה מושלם למשפחת כהן",
     "imageName": "project1.jpg"
   },
   {
-    "id": 2,
+    "uuid": "15751f8b-4f51-45e2-a6cf-aa0277fe372d",
     "title": "משפחת לוי",
     "description": "מטבח כפרי וארונות חדרים.",
     "imageName": "project2.jpg"
   },
   {
-    "id": 3,
+    "uuid": "c7d21a4d-d7bb-4685-92c1-f2f82e1b99e2",
     "title": "משפחת יצחק",
     "description": "ריהוט כללי לכל הבית",
     "imageName": "project3.jpg"
   },
   {
-    "id": 4,
+    "uuid": "b52f1994-0332-47cf-b7ab-5c72e524b6b7",
     "title": "משפחת ששון",
     "description": "ארונות הביתה וקיר.",
     "imageName": "project4.jpg"

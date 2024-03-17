@@ -1,6 +1,8 @@
 @use '../../../index.scss' as i;
 
 .ProjectsSection {
+    margin: 50px 0;
+
     .projectsHeader {
         padding-right: 50px;
         text-align: right;
@@ -22,11 +24,9 @@
 
     .projectsCardContainer {
         display: flex;
-        padding: 50px;
+        padding: 0 50px;
         gap: 25px;
     }
-
-
 
     @keyframes projectsAnim {
         0% {
@@ -39,5 +39,4 @@
             transform: translateX(0);
         }
     }
-
 }

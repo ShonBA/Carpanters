@@ -5,10 +5,10 @@ import ContactUs from "../../CompanyArea/ContactUs/ContactUs";
 import Recommendations from "../../CompanyArea/Recommendations/Recommendations";
 import CustomCarpentry from "../../DisplayArea/CustomCarpentry/CustomCarpentry";
 import Gallery from "../../DisplayArea/Gallery/Gallery";
+import { ProjectsPage } from "../../DisplayArea/ProjectsPage/ProjectsPage";
 import Home from "../../HomeArea/Home/Home";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import "./Router.scss";
-
 
 function Router(): JSX.Element {
     return (
@@ -20,6 +20,7 @@ function Router(): JSX.Element {
                 <Route path={appConfig.AboutRoute} element={<AboutUs />}></Route>
                 <Route path={appConfig.RecommendationRoute} element={<Recommendations />}></Route>
                 <Route path={appConfig.ContactUsRoute} element={<ContactUs />}></Route>
+                <Route path={appConfig.ProjectsRoute + ":id"} element={<ProjectsPage />}></Route>
 
                 {/* Default Routes */}
                 <Route path="/" element={<Navigate to={appConfig.HomeRoute} />} />

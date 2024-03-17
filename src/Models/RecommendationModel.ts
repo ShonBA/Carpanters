@@ -1,5 +1,5 @@
 class RecommendationModel {
-    public id: number;
+    public uuid: string;
     public clientName: string;
     public rank: number;
     public comment: string;

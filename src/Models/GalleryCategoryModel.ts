@@ -1,7 +1,7 @@
 import GalleryModel from "./GalleryModel";
 
 class GalleryCategoryModel {
-    public id: number;
+    public uuid: string;
     public type: string;
     public materials: string[];
     public data: GalleryModel[];

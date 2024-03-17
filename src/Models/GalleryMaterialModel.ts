@@ -1,5 +1,5 @@
 class GalleryMaterialModel {
-    public id: number;
+    public uuid: string;
     public name: string;
     public description: string;
     public imageName: string;
