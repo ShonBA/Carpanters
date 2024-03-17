@@ -9,7 +9,6 @@ function Gallery(): JSX.Element {
     return (
         <div className="Gallery">
             <div className="galleryHeaderContainer">
-                <img src={x} />
                 <h2>גלריית עבודות</h2>
             </div>
             <div className="gallery">
