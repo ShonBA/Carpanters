@@ -2,7 +2,13 @@
 
 .Gallery {
     .galleryHeaderContainer {
-        padding: 50px 30px 50px 50px;
+        padding: 50px 30px 10px 50px;
+        background-image: url('../../../Assets/Images/backround_image1.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
 
         img {
             height: 50vh;
@@ -27,9 +33,10 @@
     }
 
     .galleryParaContainer {
-        width: 85%;
-        margin: 40px auto;
-        padding: 40px 40px;
+        // width: 80%;
+        padding: 40px 0px;
+        margin: 0px 100px 40px;
+        box-sizing: border-box;
         background-color: i.$fourth_color;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
@@ -42,7 +49,7 @@
     }
 
     .gallery {
-        padding: 0 100px 100px;
+        padding: 50px 100px;
         transition: .3s;
 
         &__thumb {
