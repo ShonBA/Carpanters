@@ -59,4 +59,20 @@
         transition: opacity .3s ease-in;
         opacity: 0.3;
     }
+
+    &.visible {
+        animation: projectsAnim 2s ease 0s 1 normal forwards;
+    }
+
+    @keyframes projectsAnim {
+        0% {
+            opacity: 0;
+            transform: translateX(250px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 }

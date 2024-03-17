@@ -9,9 +9,8 @@
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         background-color: i.$third_color;
 
-
-        &.visible {
-            animation: cardAnim 2s ease 0s 1 normal forwards;
+        &:hover {
+            animation: testAnim 2s ease 0s infinite alternate forwards;
         }
 
         background-color: 0.3s ease-in-out;
@@ -31,6 +30,10 @@
         &:hover {
             transform: translateX(-20px);
         }
+    }
+
+    &.visible {
+        animation: cardAnim 2s ease 0s 1 normal forwards;
     }
 
     @keyframes cardAnim {
@@ -74,6 +77,28 @@
         100% {
             animation-timing-function: ease-out;
             transform: translateX(0);
+        }
+    }
+
+    @keyframes testAnim {
+        0% {
+            transform: translateY(0);
+        }
+
+        25% {
+            transform: translateY(-5px);
+        }
+
+        50% {
+            transform: translateY(0);
+        }
+
+        75% {
+            transform: translateY(5px);
+        }
+
+        100% {
+            transform: translateY(0);
         }
     }
 }

@@ -1,4 +1,3 @@
-import x from '../../../Assets/Images/backround_image2.jpg';
 import useTitle from "../../../Utils/useTitle";
 import "./Gallery.scss";
 import GalleryDisplay from "./GalleryDisplay/GalleryDisplay";
