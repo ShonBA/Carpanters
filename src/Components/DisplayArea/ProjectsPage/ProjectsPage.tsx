@@ -46,8 +46,7 @@ export function ProjectsPage(): JSX.Element {
             </div>
             <div>
                 {feProject && <CarouselLib
-                    responsive={responsive}
-                >
+                    responsive={responsive}>
                     {feProject?.imagesNames.map((image, index) =>
                         <GalleryCard key={index} withCaption={false} gallery={undefined} imagePath={`${feProject?.imageFolderName}${image}`} />
                     )}

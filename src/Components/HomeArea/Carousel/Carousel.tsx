@@ -1,8 +1,5 @@
 import CarouselLib from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import bg1 from '../../../Assets/Images/backround_image1.jpg';
-import bg2 from '../../../Assets/Images/backround_image2.jpg';
-import bg3 from '../../../Assets/Images/backround_image3.jpeg';
 import "./Carousel.scss";
 
 function Carousel(): JSX.Element {
@@ -25,18 +22,21 @@ function Carousel(): JSX.Element {
     };
     return (
         <div className="Carousel">
-            <CarouselLib
-                responsive={responsive}
-                infinite={true}
-                autoPlay={true}
-                autoPlaySpeed={5000}
-                transitionDuration={1500}
-                removeArrowOnDeviceType={["tablet", "mobile"]}
-            >
-                <img src={bg1} />
-                <img src={bg2} />
-                <img src={bg3} />
-            </CarouselLib>
+            <div className="carouselContainer">
+                <CarouselLib
+                    responsive={responsive}
+                    infinite={true}
+                    autoPlay={true}
+                    autoPlaySpeed={5000}
+                    transitionDuration={1500}
+                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                >
+                    <div className="homeCarousel1"></div>
+                    <div className="homeCarousel2"></div>
+                    <div className="homeCarousel3"></div>
+                </CarouselLib>
+                <h2>ווד ונדרס בע"מ</h2>
+            </div>
         </div >
     );
 }
