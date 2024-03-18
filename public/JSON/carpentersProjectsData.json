@@ -2,25 +2,67 @@
   {
     "uuid": "671b1b8d-3ec2-48cb-bc33-3457ffeb1698",
     "designer": "שני יצחקי",
-    "description": "נגרות מלאה - שחור ועץ",
-    "imageUrl": "../../../../Assets/Images/Projects/wood/wood-kitchen1.jpg"
+    "description": "נגרות מלאה בגוונים שחור ועץ",
+    "imageFolderName": "wood/",
+    "imagesNames": [
+      "wood-kitchen1.jpg",
+      "wood-kitchen2.jpg",
+      "wood-kitchen3.jpg",
+      "wood-kitchen4.jpg",
+      "wood-kitchen5.jpg",
+      "wood-kitchen6.jpg",
+      "wood-bed1.jpg",
+      "wood-bed2.jpg",
+      "wood-bed3.jpg",
+      "wood-bed4.jpg"
+    ],
+    "photographer": "איציק ברנע"
   },
   {
     "uuid": "15751f8b-4f51-45e2-a6cf-aa0277fe372d",
     "designer": "עדן יעקוב",
     "description": "מטבח בעיצוב יוקרתי.",
-    "imageUrl": "../../../../Assets/Images/Projects/luxury/luxury-kitchen1.jpg"
+    "imageFolderName": "luxury/",
+    "imagesNames": [
+      "luxury-kitchen1.jpg",
+      "luxury-kitchen2.jpg",
+      "luxury-kitchen3.jpg",
+      "luxury-kitchen4.jpg",
+      "luxury-kitchen5.jpg",
+      "luxury-kitchen6.jpg"
+    ],
+    "photographer": "דוד יצחקוב"
   },
   {
     "uuid": "c7d21a4d-d7bb-4685-92c1-f2f82e1b99e2",
     "designer": "נעמה אריאלי",
-    "description": "מטבח קלרסי.",
-    "imageUrl": "../../../../Assets/Images/Projects/classic/classic-kitchen1.jpg"
+    "description": "מטבח קלאסי.",
+    "imageUrl": "classic/classic-kitchen1.jpg",
+    "imageFolderName": "classic/",
+    "imagesNames": [
+      "classic-kitchen1.jpg",
+      "classic-kitchen2.jpg",
+      "classic-kitchen3.jpg",
+      "classic-kitchen4.jpg",
+      "classic-kitchen5.jpg",
+      "classic-kitchen6.jpg"
+    ],
+    "photographer": "אמיר שמעוני"
   },
   {
     "uuid": "b52f1994-0332-47cf-b7ab-5c72e524b6b7",
     "designer": "שרית אשכנזי",
     "description": "מטבח בגוון שחור ועץ.",
-    "imageUrl": "../../../../Assets/Images/Projects/black-wood/black-wood-kitchen1.jpg"
+    "imageUrl": "black-wood/black-wood-kitchen1.jpg",
+    "imageFolderName": "black-wood/",
+    "imagesNames": [
+      "black-wood-kitchen1.jpg",
+      "black-wood-kitchen2.jpg",
+      "black-wood-kitchen3.jpg",
+      "black-wood-kitchen4.jpg",
+      "black-wood-kitchen5.jpg",
+      "black-wood-kitchen6.jpg"
+    ],
+    "photographer": "טל לוי"
   }
 ]
