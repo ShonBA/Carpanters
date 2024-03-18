@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import CarouselLib from "react-multi-carousel";
 import { useParams } from "react-router-dom";
 import ProjectModel from "../../../Models/ProjectModel";
 import dataService from "../../../Service/DataArea";
-import CarouselLib from "react-multi-carousel";
+import GalleryCard from "../Gallery/GalleryCard/GalleryCard";
 import "./ProjectsPage.scss";
 
 export function ProjectsPage(): JSX.Element {
@@ -44,11 +45,11 @@ export function ProjectsPage(): JSX.Element {
                 <p>צילום: {feProject?.photographer}</p>
             </div>
             <div>
-                {feProject && <CarouselLib 
-                responsive={responsive}
+                {feProject && <CarouselLib
+                    responsive={responsive}
                 >
                     {feProject?.imagesNames.map((image, index) =>
-                        <img key={index} src={require(`../../../Assets/Images/Projects/${feProject?.imageFolderName}${image}`)} alt={image} />
+                        <GalleryCard key={index} withCaption={false} gallery={undefined} imagePath={`${feProject?.imageFolderName}${image}`} />
                     )}
                 </CarouselLib>}
             </div>

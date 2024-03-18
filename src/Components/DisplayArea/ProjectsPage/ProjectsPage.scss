@@ -1,6 +1,8 @@
 @use '../../../index.scss' as i;
 
 .ProjectsPage {
+    padding-bottom: 10vh;
+
     .projectPageHeaderContainer {
         padding: 50px 30px 10px 50px;
         background-image: url('../../../Assets/Images/backround_image1.jpg');
@@ -26,7 +28,6 @@
     }
 
     .react-multi-carousel-list {
-        // height: ;
         width: 80%;
         margin: 0 auto;
 

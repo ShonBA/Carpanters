@@ -1,5 +1,51 @@
 .GalleryCard {
-	.gallery__image{
+    .gallery {
+        &__thumb {
+            position: relative;
+
+            &:hover {
+                .gallery__caption {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__row {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        &__image {
+            width: 300px;
+            height: 250px;
+            margin: 20px 0px;
+            transition: .3s;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 20px;
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+        }
+
+        &__caption {
+            position: absolute;
+            bottom: 0;
+            left: 70px;
+            width: 300px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            color: white;
+            opacity: 0;
+            background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255, 255, 0) 100%);
+            transition: .3s;
+        }
+    }
+
+    .gallery__image {
         margin: 0 20px;
     }
 }

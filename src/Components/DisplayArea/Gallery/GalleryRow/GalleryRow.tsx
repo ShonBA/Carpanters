@@ -52,7 +52,7 @@ function GalleryRow(props: GalleryRowData): JSX.Element {
                     >
                         {props.category.data
                             .filter(g => g.material === props.material)
-                            .map(d => <GalleryCard key={d.uuid} gallery={d} />)}
+                            .map(d => <GalleryCard key={d.uuid} withCaption={true} gallery={d} imagePath={undefined} />)}
                     </CarouselLib>
                 </div>
             </Collapse>
