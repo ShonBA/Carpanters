@@ -22,7 +22,7 @@
 
     h2 {
         position: absolute;
-        inset: auto auto 30px 30px;
+        inset: auto 20px 30px 20px;
         margin: 0;
         transition: inset .3s .3s ease-out;
         font-family: 'Roboto Condensed', sans-serif;
@@ -39,11 +39,11 @@
     }
 
     p {
-        inset: auto auto 80px 40px;
+        inset: auto 30px 80px 30px;
     }
 
     &:hover h2 {
-        inset: auto auto 220px 30px;
+        inset: auto 20px 220px 20px;
         transition: inset .3s ease-out;
         transition: color 1.5s ease-out;
         color: black;

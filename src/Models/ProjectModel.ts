@@ -1,8 +1,10 @@
 class ProjectModel {
     public uuid: string;
-    public title: string;
+    public designer: string;
     public description: string;
-    public imageName: string;
+    public imageFolderName: string;
+    public imagesNames: string[];
+    public photographer: string;
 }
 
 export default ProjectModel;

@@ -2,20 +2,15 @@
 
 .ProjectsSection {
     margin: 50px 0;
+    padding: 0 50px;
 
     .projectsHeader {
-        padding-right: 50px;
         text-align: right;
         width: fit-content;
         background: white;
         background-color: i.$third_color;
         border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
         transition: all .4s ease;
-
-        .projectsHeader:hover {
-            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
-            box-shadow: 10px 10px rgba(0, 0, 0, .25);
-        }
 
         &.visible {
             animation: projectsAnim 2s ease 0s 1 normal forwards;
@@ -24,7 +19,6 @@
 
     .projectsCardContainer {
         display: flex;
-        padding: 0 50px;
         gap: 25px;
     }
 
