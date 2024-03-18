@@ -3,24 +3,24 @@
     "uuid": "671b1b8d-3ec2-48cb-bc33-3457ffeb1698",
     "designer": "שני יצחקי",
     "description": "נגרות מלאה - שחור ועץ",
-    "imageUrl": "../../../../Assets/Images/Projects/wood/wood-kitchen1.jpg"
+    "imageUrl": "wood/wood-kitchen1.jpg"
   },
   {
     "uuid": "15751f8b-4f51-45e2-a6cf-aa0277fe372d",
     "designer": "עדן יעקוב",
     "description": "מטבח בעיצוב יוקרתי.",
-    "imageUrl": "../../../../Assets/Images/Projects/luxury/luxury-kitchen1.jpg"
+    "imageUrl": "luxury/luxury-kitchen1.jpg"
   },
   {
     "uuid": "c7d21a4d-d7bb-4685-92c1-f2f82e1b99e2",
     "designer": "נעמה אריאלי",
     "description": "מטבח קלרסי.",
-    "imageUrl": "../../../../Assets/Images/Projects/classic/classic-kitchen1.jpg"
+    "imageUrl": "classic/classic-kitchen1.jpg"
   },
   {
     "uuid": "b52f1994-0332-47cf-b7ab-5c72e524b6b7",
     "designer": "שרית אשכנזי",
     "description": "מטבח בגוון שחור ועץ.",
-    "imageUrl": "../../../../Assets/Images/Projects/black-wood/black-wood-kitchen1.jpg"
+    "imageUrl": "black-wood/black-wood-kitchen1.jpg"
   }
 ]
