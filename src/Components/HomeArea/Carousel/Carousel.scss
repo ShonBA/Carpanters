@@ -1,9 +1,46 @@
 @use '../../../index.scss' as i;
 
 .Carousel {
-    img {
+    .carouselContainer {
+        padding-right: 30px;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 30px;
+        width: fit-content;
+        font-size: 2rem;
+        background-color: i.$fourth_color;
+        color: i.$first_color;
+        text-align: right;
+        position: absolute;
+        top: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .homeCarousel1 {
+        background-image: url('../../../Assets/Images/bg1.jpg');
+    }
+
+    .homeCarousel2 {
+        background-image: url('../../../Assets/Images/bg2.jpg');
+    }
+
+    .homeCarousel3 {
+        background-image: url('../../../Assets/Images/bg3.jpg');
+    }
+
+    .homeCarousel1,
+    .homeCarousel2,
+    .homeCarousel3 {
+        padding: 50px 30px 10px 50px;
         width: 100vw;
-        height: 100vh;
+        height: 50vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .react-multiple-carousel__arrow {
@@ -76,73 +113,6 @@
     .v100 {
         animation: v80tov100 400ms linear forwards;
     }
-}
-
-@keyframes showLogo {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes v0tov20 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: .2;
-    }
-}
-
-@keyframes v20tov40 {
-    0% {
-        opacity: .2;
-    }
-
-    100% {
-        opacity: .4;
-    }
-}
-
-@keyframes v40tov60 {
-    0% {
-        opacity: .4;
-    }
-
-    100% {
-        opacity: .6;
-    }
-}
-
-@keyframes v60tov80 {
-    0% {
-        opacity: .6;
-    }
-
-    100% {
-        opacity: .8;
-    }
-}
-
-@keyframes v80tov100 {
-    0% {
-        opacity: .8;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.Carousel {
-    img {
-        width: 100vw;
-        height: 100vh;
-    }
 
     .react-multiple-carousel__arrow {
         z-index: 0;
@@ -153,6 +123,66 @@
             li {
                 width: 100vw !important;
             }
+        }
+    }
+
+    @keyframes showLogo {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes v0tov20 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: .2;
+        }
+    }
+
+    @keyframes v20tov40 {
+        0% {
+            opacity: .2;
+        }
+
+        100% {
+            opacity: .4;
+        }
+    }
+
+    @keyframes v40tov60 {
+        0% {
+            opacity: .4;
+        }
+
+        100% {
+            opacity: .6;
+        }
+    }
+
+    @keyframes v60tov80 {
+        0% {
+            opacity: .6;
+        }
+
+        100% {
+            opacity: .8;
+        }
+    }
+
+    @keyframes v80tov100 {
+        0% {
+            opacity: .8;
+        }
+
+        100% {
+            opacity: 1;
         }
     }
 }

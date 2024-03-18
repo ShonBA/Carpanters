@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import x from '../../../Assets/Images/backround_image1.jpg';
 import carpenter1Image from '../../../Assets/Images/carpenter1.png';
 import carpenter2Image from '../../../Assets/Images/carpenter2.png';
 import carpenter3Image from '../../../Assets/Images/carpenter3.png';
