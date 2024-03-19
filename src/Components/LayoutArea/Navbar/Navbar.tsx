@@ -23,7 +23,6 @@ function Navbar(): JSX.Element {
                 <li><NavLink to={appConfig.AboutRoute}>אודותינו</NavLink></li>
                 <li><NavLink to={appConfig.RecommendationRoute}>המלצות</NavLink></li>
                 <li><NavLink to={appConfig.ContactUsRoute}>צור קשר</NavLink></li>
-                <li><NavLink to={appConfig.CustomCarpenterRoute} className="long-text">נגרות בהתאמה אישית</NavLink></li>
             </ul>
         </div >
     );

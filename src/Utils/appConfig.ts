@@ -11,7 +11,6 @@ class AppConfig {
     public readonly HomeRoute: string = "/home";
     public readonly GalleryRoute: string = "/gallery";
     public readonly ProjectsRoute: string = "/projects";
-    public readonly CustomCarpenterRoute: string = "/custom-carpentry";
     public readonly AboutRoute: string = "/about";
     public readonly RecommendationRoute: string = "/recommendations";
     public readonly ContactUsRoute: string = "/contact-us";
