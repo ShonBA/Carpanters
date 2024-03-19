@@ -1,4 +1,5 @@
 import useTitle from "../../../Utils/useTitle";
+import Articles from "../../Common/Articles/Articles";
 import ContactUsForm from "../../Common/ContactUsForm/ContactUsForm";
 import AboutUsSection from "../AboutUsSection/AboutUsSection";
 import Carousel from "../Carousel/Carousel";
@@ -16,6 +17,7 @@ function Home(): JSX.Element {
             <ProjectsSection />
             <RecommendationsSection />
             <ContactUsForm withSocials={true} />
+            <Articles />
         </div>
     );
 }

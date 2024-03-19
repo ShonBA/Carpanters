@@ -8,6 +8,7 @@ import useTitle from "../../../Utils/useTitle";
 import ContactUsForm from "../../Common/ContactUsForm/ContactUsForm";
 import RecommendationCard from "../../HomeArea/RecommendationsSection/RecommendationCard/RecommendationCard";
 import "./AboutUs.scss";
+import Articles from "../../Common/Articles/Articles";
 
 function AboutUs(): JSX.Element {
     useTitle("About Us");
@@ -26,7 +27,7 @@ function AboutUs(): JSX.Element {
                 <h2>מי אנחנו?</h2>
             </div>
 
-            
+
             <h1>אנחנו ווד וונדרס בע"מ, המקום בו האומנות נפגשת עם המצוינות!</h1>
 
 
@@ -51,8 +52,10 @@ function AboutUs(): JSX.Element {
             </div>
             <h1>צרו קשר עוד היום ותנו למומחים שלנו לדאוג לכם!</h1>
             <div className="contactUsFrom">
-                <ContactUsForm withSocials={true}/>
+                <ContactUsForm withSocials={true} />
             </div>
+
+            <Articles />
         </div>
     );
 }
