@@ -1,14 +1,6 @@
 @use '../../../index.scss' as i;
 
 .AboutUs {
-    h1 {
-        background-color: i.$first_color;
-        color: i.$fourth_color;
-        padding: 12px 0px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    }
-
-
     .aboutUSHeaderContainer {
         padding: 50px 30px 10px 50px;
         background-image: url('../../../Assets/Images/bg1.jpg');
@@ -64,7 +56,6 @@
         margin: auto;
         margin-top: 40px;
         grid-template-columns: 50% 50%;
-        // border: 2px solid i.$first_color;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
         img {
@@ -85,13 +76,9 @@
     }
 
     .parallax {
+        background-image: url('../../../Assets/Images/logs.png');
         margin: 0px 0px 40px 0px;
         height: 50vh;
-        background-image: url('../../../Assets/Images/logs.png');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .recommendationContainer {

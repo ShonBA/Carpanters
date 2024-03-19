@@ -3,6 +3,7 @@ import Articles from "../../Common/Articles/Articles";
 import ContactUsForm from "../../Common/ContactUsForm/ContactUsForm";
 import AboutUsSection from "../AboutUsSection/AboutUsSection";
 import Carousel from "../CarouselSection/Carousel";
+import { ContactUsSection } from "../ContactUsSection/ContactUsSection";
 import ProjectsSection from "../ProjectsSection/ProjectsSection";
 import RecommendationsSection from "../RecommendationsSection/RecommendationsSection";
 import "./Home.scss";
@@ -16,7 +17,7 @@ function Home(): JSX.Element {
             <AboutUsSection />
             <ProjectsSection />
             <RecommendationsSection />
-            <ContactUsForm withSocials={true} />
+            <ContactUsSection />
             <Articles />
         </div>
     );

@@ -28,7 +28,7 @@ function AboutUs(): JSX.Element {
             </div>
 
 
-            <h1>אנחנו ווד וונדרס בע"מ, המקום בו האומנות נפגשת עם המצוינות!</h1>
+            <h1 className="subHeader">אנחנו ווד וונדרס בע"מ, המקום בו האומנות נפגשת עם המצוינות!</h1>
 
 
             <div className="gridContainer">
@@ -46,11 +46,11 @@ function AboutUs(): JSX.Element {
 
             <div className="parallax"></div>
 
-            <h1>אל תאמינו לנו, תאמינו להם:</h1>
+            <h1 className="subHeader">אל תאמינו לנו, תאמינו להם:</h1>
             <div className="recommendationContainer">
                 {feRecommendationsData.map((recommendation) => <RecommendationCard key={recommendation.uuid} recommendation={recommendation} />)}
             </div>
-            <h1>צרו קשר עוד היום ותנו למומחים שלנו לדאוג לכם!</h1>
+            <h1 className="subHeader">צרו קשר עוד היום ותנו למומחים שלנו לדאוג לכם!</h1>
             <div className="contactUsFrom">
                 <ContactUsForm withSocials={true} />
             </div>

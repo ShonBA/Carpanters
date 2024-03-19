@@ -4,19 +4,32 @@ $third_color: #FAEED1;
 $fourth_color: #FDF7E4;
 
 body,
-html {
+html,
+:root {
   height: 100vh;
   margin: 0;
   padding: 0;
   text-align: center;
   box-sizing: border-box;
   direction: rtl;
+  font-size: 20px;
+
+  .subHeader {
+    background-color: $first_color;
+    color: $fourth_color;
+    padding: 12px 0px;
+    margin: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 * {
   font-family: rubik;
-}
-
-:root {
-  font-size: 20px;
 }

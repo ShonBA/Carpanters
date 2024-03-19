@@ -1,9 +1,11 @@
 .RecommendationsSection {
-    margin: 0 50px;
 
-    .recommendationsList {
+    .parallax {
+        background-image: url('../../../Assets/Images/carpenter4.png');
         display: flex;
         justify-content: space-around;
+        padding: 15vh;
+        background-color: opacity($color: #000000);
     }
 
     &.visible {
