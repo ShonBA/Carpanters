@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import ProjectModel from "../../../Models/ProjectModel";
 import dataService from "../../../Service/DataArea";
-import ProjectCard from "./ProjectCard/ProjectCard";
+import ProjectCard from "../../Common/ImagesCard/ImagesCard";
 import "./ProjectsSection.scss";
 
 function ProjectsSection(): JSX.Element {

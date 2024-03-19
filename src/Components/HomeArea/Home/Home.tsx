@@ -1,7 +1,7 @@
 import useTitle from "../../../Utils/useTitle";
 import ContactUsForm from "../../Common/ContactUsForm/ContactUsForm";
 import AboutUsSection from "../AboutUsSection/AboutUsSection";
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../CarouselSection/Carousel";
 import ProjectsSection from "../ProjectsSection/ProjectsSection";
 import RecommendationsSection from "../RecommendationsSection/RecommendationsSection";
 import "./Home.scss";
