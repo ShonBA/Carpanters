@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
+import { useInView } from 'react-intersection-observer';
 import QualityModel from "../../../Models/QualityModel";
 import dataService from "../../../Service/DataArea";
 import "./AboutUsSection.scss";
 import QualityCard from "./QualityCard/QualityCard";
-import { useInView } from 'react-intersection-observer';
 
 function AboutUsSection(): JSX.Element {
 

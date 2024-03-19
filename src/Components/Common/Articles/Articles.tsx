@@ -19,7 +19,7 @@ function Articles(): JSX.Element {
     ]
     return (
         <div className="Articles">
-            <h2>ראו עוד...</h2>
+            <h1 className="subHeader">ראו עוד...</h1>
             <div className="articles-content">
                 <div className="row-content">
                     {articles.map(a => <Article header={a.header} content={a.content}

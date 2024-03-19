@@ -1,86 +1,45 @@
 @use '../../../index.scss' as i;
 
 .AboutUsSection {
-    height: 50vh;
     margin: 20px 10vh;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 3.5fr 1.5fr;
-    column-gap: 20px;
-    box-sizing: border-box;
-    position: relative;
-
-    &::before,
-    &::after {
-        content: "";
-        position: absolute;
-        top: -5px;
-        left: -5px;
-        right: -5px;
-        bottom: -5px;
-        border: 2px solid i.$first_color;
-        animation: clippath 3s infinite linear;
-    }
-
-    &::after {
-        animation: clippath 3s infinite -1.5s linear;
-    }
 
     .homeAboutContainer {
-        padding: 0px 20vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-        background-color: i.$third_color;
+        padding: 5vh 20vh;
 
         &.visible {
             animation: aboutHeaderAnim 2s ease 0s 1 normal forwards;
         }
-
-        h1 {
-            margin: 0;
-            font-weight: normal;
-        }
     }
 
     .qualityCardContainer {
+        height: 60vh;
+        background-image: url("../../../Assets/Images/bg2.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25px;
         display: flex;
-        justify-content: space-between;
-        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 10vh;
+        margin: 0 0 30vh 0;
     }
 
     @keyframes aboutHeaderAnim {
         0% {
             opacity: 0;
-            transform: rotateY(70deg);
+            transform: rotateX(70deg);
             transform-origin: right;
         }
 
         100% {
             opacity: 1;
-            transform: rotateY(0);
+            transform: rotateX(0);
             transform-origin: right;
-        }
-    }
-
-    @keyframes clippath {
-
-        0%,
-        100% {
-            clip-path: inset(0 0 98% 0);
-        }
-
-        25% {
-            clip-path: inset(0 98% 0 0);
-        }
-
-        50% {
-            clip-path: inset(98% 0 0 0);
-        }
-
-        75% {
-            clip-path: inset(0 0 0 98%);
         }
     }
 }

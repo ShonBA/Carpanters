@@ -21,9 +21,9 @@ function ProjectsSection(): JSX.Element {
     return (
         <div className="ProjectsSection">
             <div className={`projectsHeader ${projectHeaderInView ? `visible` : ``}`} ref={projectHeaderRef}>
-                <h3>
+                <h1 className="subHeader">
                     קצת פרוייקטים שלנו:
-                </h3>
+                </h1>
             </div>
             <div className="projectsCardContainer">
                 {feProjectsData.map(project => <ProjectCard key={project.uuid} project={project} />)}

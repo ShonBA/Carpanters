@@ -18,9 +18,9 @@ function RecommendationsSection(): JSX.Element {
     return (
         <div className={`RecommendationsSection ${recHeaderInView ? `visible` : ``}`} ref={recHeaderRef}>
             <div className={`recHeader`} >
-                <h2>הלקוחות שלנו: </h2>
+                <h1 className="subHeader">הלקוחות שלנו: </h1 >
             </div>
-            <div className="recommendationsList">
+            <div className="parallax">
                 {feRecommendationsData.map((recommendation) => <RecommendationCard key={recommendation.uuid} recommendation={recommendation} />)}
             </div>
         </div>
