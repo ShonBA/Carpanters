@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import QualityModel from "../../../Models/QualityModel";
 import dataService from "../../../Service/DataArea";
 import "./AboutUsSection.scss";
-import QualityCard from "./QualityCard/QualityCard";
+import QualityCard from "../../Cards/QualityCard/QualityCard";
 
 function AboutUsSection(): JSX.Element {
 
