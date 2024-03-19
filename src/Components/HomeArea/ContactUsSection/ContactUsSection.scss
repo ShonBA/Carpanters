@@ -1,3 +1,19 @@
 .ContactUsSection {
-	
+    &.visible {
+        animation: formAnim 2s ease 0s 1 normal none;
+    }
+
+    @keyframes formAnim {
+        0% {
+            opacity: 0;
+            transform: rotateX(-100deg);
+            transform-origin: top;
+        }
+
+        100% {
+            opacity: 1;
+            transform: rotateX(0deg);
+            transform-origin: top;
+        }
+    }
 }
