@@ -2,10 +2,14 @@
 
     .parallax {
         background-image: url('../../../Assets/Images/carpenter4.png');
-        display: flex;
-        justify-content: space-around;
-        padding: 15vh;
+        padding: 15vh 0;
         background-color: opacity($color: #000000);
+
+        .recommendationsCardContainer {
+            margin: 20px 10vh;
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     &.visible {
@@ -15,10 +19,12 @@
     @keyframes recAnim {
         0% {
             opacity: 0;
+            transform: translateX(-250px);
         }
 
         100% {
             opacity: 1;
+            transform: translateX(0);
         }
     }
 }

@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import QualityModel from "../../../../Models/QualityModel";
+import QualityModel from "../../../Models/QualityModel";
 import "./QualityCard.scss";
 
 interface AboutProps {
@@ -13,7 +13,7 @@ function QualityCard(props: AboutProps): JSX.Element {
     return (
         <div className={`QualityCard ${cardInView ? `visible` : ``}`} ref={cardRef}>
             <div className={`qualityCard `}>
-                <img src={require(`../../../../Assets/Images/${props.quality.imageName}`)} />
+                <img src={require(`../../../Assets/Images/${props.quality.imageName}`)} />
                 <h3>{props.quality.header}</h3>
                 <p>{props.quality.description}</p>
             </div>

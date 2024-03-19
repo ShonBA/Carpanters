@@ -21,7 +21,9 @@ function RecommendationsSection(): JSX.Element {
                 <h1 className="subHeader">הלקוחות שלנו: </h1 >
             </div>
             <div className="parallax">
-                {feRecommendationsData.map((recommendation) => <RecommendationCard key={recommendation.uuid} recommendation={recommendation} />)}
+                <div className="recommendationsCardContainer">
+                    {feRecommendationsData.map((recommendation) => <RecommendationCard key={recommendation.uuid} recommendation={recommendation} />)}
+                </div>
             </div>
         </div>
     );

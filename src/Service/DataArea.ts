@@ -14,6 +14,7 @@ class DataService {
         let data = dataStore.getState().aboutUs
         if (data.length === 0) {
             const response = await axios.get<QualityModel[]>(appConfig.aboutUsUrl);
+            data = response.data;
         }
         const action: DataAction = { type: DataActionTypes.SetAboutUs, payload: data };
         dataStore.dispatch(action)

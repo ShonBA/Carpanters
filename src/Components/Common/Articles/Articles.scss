@@ -3,13 +3,26 @@
         width: 100%;
         display: flex;
         align-items: center;
-        margin-bottom: 60px;
 
         .row-content {
+            margin: 20px 10vh;
             width: 100%;
             display: flex;
             justify-content: space-between;
-            padding: 0px 100px;
+        }
+    }
+
+    &.visible {
+        animation: articlesAnim 4s ease 0s 1 normal forwards;
+    }
+
+    @keyframes articlesAnim {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
         }
     }
 }
