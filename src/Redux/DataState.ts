@@ -4,6 +4,7 @@ import ProjectModel from "../Models/ProjectModel";
 import QualityModel from "../Models/QualityModel";
 import RecommendationModel from "../Models/RecommendationModel";
 import GalleryMaterialModel from "../Models/GalleryMaterialModel";
+import { ArticleModel } from "../Models/ArticleModel";
 
 
 export class DataState {
@@ -12,6 +13,7 @@ export class DataState {
     public projects: ProjectModel[] = [];
     public Recommendations: RecommendationModel[] = [];
     public galleryMaterials: GalleryMaterialModel[] = [];
+    public articles: ArticleModel[] = [];
 }
 
 export enum DataActionTypes {
@@ -20,6 +22,7 @@ export enum DataActionTypes {
     SetProjects = "SetProjects",
     SetRecommendations = "SetRecommendations",
     SetGalleryMaterial = "SetGalleryMaterial",
+    SetArticles = "SetArticles",
 }
 
 export interface DataAction {
@@ -44,6 +47,9 @@ function dataReducer(currentState = new DataState(), action: DataAction): DataSt
             break;
         case DataActionTypes.SetGalleryMaterial:
             newState.galleryMaterials = action.payload;
+            break;
+        case DataActionTypes.SetArticles:
+            newState.articles = action.payload;
             break;
     }
 
