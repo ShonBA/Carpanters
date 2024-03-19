@@ -1,4 +1,5 @@
 import useTitle from "../../../Utils/useTitle";
+import Articles from "../../Common/Articles/Articles";
 import "./Gallery.scss";
 import GalleryDisplay from "./GalleryDisplay/GalleryDisplay";
 import GalleryMaterials from "./GalleryMaterials/GalleryMaterials";
@@ -17,6 +18,7 @@ function Gallery(): JSX.Element {
                 <h2>עם מה אנחנו עובדים ?</h2>
                 <GalleryMaterials />
             </div>
+            <Articles />
         </div>
     );
 }

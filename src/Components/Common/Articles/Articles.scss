@@ -1,0 +1,15 @@
+.Articles {
+    .articles-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+
+        .row-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 100px;
+        }
+    }
+}
