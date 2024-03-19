@@ -3,15 +3,42 @@
     "uuid": "671b1b8d-3ec2-48cb-bc33-3457ffeb1698",
     "description": "נגרות מלאה בגוונים שחור ועץ",
     "imagesUrls": [
-      "https://i.imgur.com/wZizno6.jpeg",
-      "https://i.imgur.com/fj2Ldh2.jpeg",
-      "https://i.imgur.com/O7eJw2V.jpeg",
-      "https://i.imgur.com/T4Jq9JL.jpeg",
-      "https://i.imgur.com/sHH98qA.jpeg",
-      "https://i.imgur.com/KtccM5g.jpeg",
-      "https://i.imgur.com/oP3ADN4.jpeg",
-      "https://i.imgur.com/RjuTI3T.jpeg",
-      "https://i.imgur.com/BaUQiFZ.jpeg"
+      {
+        "original": "https://i.imgur.com/wZizno6.jpeg",
+        "thumbnail": "https://i.imgur.com/wZizno6.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/fj2Ldh2.jpeg",
+        "thumbnail": "https://i.imgur.com/fj2Ldh2.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/O7eJw2V.jpeg",
+        "thumbnail": "https://i.imgur.com/O7eJw2V.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/T4Jq9JL.jpeg",
+        "thumbnail": "https://i.imgur.com/T4Jq9JL.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/sHH98qA.jpeg",
+        "thumbnail": "https://i.imgur.com/sHH98qA.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/KtccM5g.jpeg",
+        "thumbnail": "https://i.imgur.com/KtccM5g.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/oP3ADN4.jpeg",
+        "thumbnail": "https://i.imgur.com/oP3ADN4.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/RjuTI3T.jpeg",
+        "thumbnail": "https://i.imgur.com/RjuTI3T.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/BaUQiFZ.jpeg",
+        "thumbnail": "https://i.imgur.com/BaUQiFZ.jpeg"
+      }
     ],
     "designer": "שני יצחקי",
     "photographer": "איציק ברנע"
@@ -20,11 +47,26 @@
     "uuid": "15751f8b-4f51-45e2-a6cf-aa0277fe372d",
     "description": "מטבח בעיצוב יוקרתי.",
     "imagesUrls": [
-      "https://i.imgur.com/ZEKjKQf.jpeg",
-      "https://i.imgur.com/Fep23h5.jpeg",
-      "https://i.imgur.com/bttsvYy.jpeg",
-      "https://i.imgur.com/D0xWOs0.jpeg",
-      "https://i.imgur.com/VIBtuRg.jpeg"
+      {
+        "original": "https://i.imgur.com/ZEKjKQf.jpeg",
+        "thumbnail": "https://i.imgur.com/ZEKjKQf.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/Fep23h5.jpeg",
+        "thumbnail": "https://i.imgur.com/Fep23h5.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/bttsvYy.jpeg",
+        "thumbnail": "https://i.imgur.com/bttsvYy.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/D0xWOs0.jpeg",
+        "thumbnail": "https://i.imgur.com/D0xWOs0.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/VIBtuRg.jpeg",
+        "thumbnail": "https://i.imgur.com/VIBtuRg.jpeg"
+      }
     ],
     "designer": "עדן יעקוב",
     "photographer": "דוד יצחקוב"
@@ -33,11 +75,22 @@
     "uuid": "c7d21a4d-d7bb-4685-92c1-f2f82e1b99e2",
     "description": "מטבח קלאסי.",
     "imagesUrls": [
-      "https://i.imgur.com/VMn0UR9.jpeg",
-      "https://i.imgur.com/Hb0fFrT.jpeg",
-      "https://i.imgur.com/0ibQ2Sy.jpeg",
-      "https://i.imgur.com/kfIAdpK.jpeg",
-      "blob:https://imgur.com/b59ba4e0-ecf8-416d-ac92-c50668c4ea21"
+      {
+        "original": "https://i.imgur.com/VMn0UR9.jpeg",
+        "thumbnail": "https://i.imgur.com/VMn0UR9.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/Hb0fFrT.jpeg",
+        "thumbnail": "https://i.imgur.com/Hb0fFrT.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/0ibQ2Sy.jpeg",
+        "thumbnail": "https://i.imgur.com/0ibQ2Sy.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/kfIAdpK.jpeg",
+        "thumbnail": "https://i.imgur.com/kfIAdpK.jpeg"
+      }
     ],
     "designer": "נעמה אריאלי",
     "photographer": "אמיר שמעוני"
@@ -46,12 +99,30 @@
     "uuid": "b52f1994-0332-47cf-b7ab-5c72e524b6b7",
     "description": "מטבח בגוון שחור ועץ.",
     "imagesUrls": [
-      "https://i.imgur.com/Z1Xiw7W.jpeg",
-      "https://i.imgur.com/ThTIJkv.jpeg",
-      "https://i.imgur.com/LmNAUZO.jpeg",
-      "https://i.imgur.com/kcVw4oB.jpeg",
-      "https://i.imgur.com/reSjxRZ.jpeg",
-      "https://i.imgur.com/ql8BZXa.jpeg"
+      {
+        "original": "https://i.imgur.com/Z1Xiw7W.jpeg",
+        "thumbnail": "https://i.imgur.com/Z1Xiw7W.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/ThTIJkv.jpeg",
+        "thumbnail": "https://i.imgur.com/ThTIJkv.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/LmNAUZO.jpeg",
+        "thumbnail": "https://i.imgur.com/LmNAUZO.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/kcVw4oB.jpeg",
+        "thumbnail": "https://i.imgur.com/kcVw4oB.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/reSjxRZ.jpeg",
+        "thumbnail": "https://i.imgur.com/reSjxRZ.jpeg"
+      },
+      {
+        "original": "https://i.imgur.com/ql8BZXa.jpeg",
+        "thumbnail": "https://i.imgur.com/ql8BZXa.jpeg"
+      }
     ],
     "designer": "שרית אשכנזי",
     "photographer": "טל לוי"
