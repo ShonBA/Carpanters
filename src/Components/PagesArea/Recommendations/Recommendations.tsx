@@ -1,5 +1,7 @@
 import useTitle from "../../../Utils/useTitle";
 import Articles from "../../Common/Articles/Articles";
+import { ContactUsSection } from "../../HomeArea/ContactUsSection/ContactUsSection";
+import RecommendationsSection from "../../HomeArea/RecommendationsSection/RecommendationsSection";
 import "./Recommendations.scss";
 
 function Recommendations(): JSX.Element {
@@ -10,8 +12,9 @@ function Recommendations(): JSX.Element {
             <div className="recommendationsHeaderContainer">
                 <h2>לקוחות משתפים</h2>
             </div>
-
             <Articles />
+            <RecommendationsSection />
+            <ContactUsSection />
         </div>
     );
 }
