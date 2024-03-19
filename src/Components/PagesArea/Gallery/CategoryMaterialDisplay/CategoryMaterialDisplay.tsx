@@ -2,8 +2,8 @@ import { Squash as Hamburger } from 'hamburger-react';
 import { useState } from "react";
 import { Collapse } from "react-collapse";
 import GalleryCategoryModel from "../../../../Models/GalleryCategoryModel";
-import GalleryRow from "../GalleryRow/GalleryRow";
-import "./CategoryGallery.scss";
+import GalleryRow from "../GalleryMaterialDisplay/GalleryMaterialDisplay";
+import "./CategoryMaterialDisplay.scss";
 
 
 interface GalleryCategoryProps {

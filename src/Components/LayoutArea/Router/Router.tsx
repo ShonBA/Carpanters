@@ -1,11 +1,11 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import appConfig from "../../../Utils/appConfig";
-import AboutUs from "../../CompanyArea/AboutUs/AboutUs";
-import ContactUs from "../../CompanyArea/ContactUs/ContactUs";
-import Recommendations from "../../CompanyArea/Recommendations/Recommendations";
-import Gallery from "../../DisplayArea/Gallery/Gallery";
-import { ProjectsPage } from "../../DisplayArea/ProjectsPage/ProjectsPage";
 import Home from "../../HomeArea/Home/Home";
+import AboutUs from "../../PagesArea/AboutUs/AboutUs";
+import ContactUs from "../../PagesArea/ContactUs/ContactUs";
+import Gallery from "../../PagesArea/Gallery/Gallery";
+import { ProjectsInfo } from "../../PagesArea/ProjectInfo/ProjectInfo";
+import Recommendations from "../../PagesArea/Recommendations/Recommendations";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import "./Router.scss";
 
@@ -18,7 +18,7 @@ function Router(): JSX.Element {
                 <Route path={appConfig.AboutRoute} element={<AboutUs />}></Route>
                 <Route path={appConfig.RecommendationRoute} element={<Recommendations />}></Route>
                 <Route path={appConfig.ContactUsRoute} element={<ContactUs />}></Route>
-                <Route path={appConfig.ProjectsRoute + "/:uuid"} element={<ProjectsPage />}></Route>
+                <Route path={appConfig.ProjectsRoute + "/:uuid"} element={<ProjectsInfo />}></Route>
 
                 {/* Default Routes */}
                 <Route path="/" element={<Navigate to={appConfig.HomeRoute} />} />

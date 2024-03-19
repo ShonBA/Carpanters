@@ -1,6 +1,8 @@
 @use '../../../../index.scss' as i;
+
 .CategoryGallery {
     border: 1px solid i.$second_color;
+
     >h2 {
         margin: 0;
         cursor: pointer;

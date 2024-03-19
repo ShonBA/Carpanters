@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Collapse } from "react-collapse";
 import CarouselLib from "react-multi-carousel";
 import GalleryCategoryModel from "../../../../Models/GalleryCategoryModel";
-import GalleryCard from "../GalleryCard/GalleryCard";
+import GalleryCard from "../../../Cards/ImageCard/ImageCard";
 import { Squeeze as Hamburger } from 'hamburger-react'
-import "./GalleryRow.scss";
+import "./GalleryMaterialDisplay.scss";
 
 interface GalleryRowData {
     category: GalleryCategoryModel;

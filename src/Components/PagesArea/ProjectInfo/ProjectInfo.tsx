@@ -3,10 +3,10 @@ import CarouselLib from "react-multi-carousel";
 import { useParams } from "react-router-dom";
 import ProjectModel from "../../../Models/ProjectModel";
 import dataService from "../../../Service/DataArea";
-import GalleryCard from "../Gallery/GalleryCard/GalleryCard";
-import "./ProjectsPage.scss";
+import ImageCard from "../../Cards/ImageCard/ImageCard";
+import "./ProjectInfo.scss";
 
-export function ProjectsPage(): JSX.Element {
+export function ProjectsInfo(): JSX.Element {
 
     const params = useParams();
     const [feProject, setFeProject] = useState<ProjectModel>();
@@ -36,8 +36,8 @@ export function ProjectsPage(): JSX.Element {
     };
 
     return (
-        <div className="ProjectsPage">
-            <div className="projectPageHeaderContainer">
+        <div className="ProjectsInfo">
+            <div className="projectInfoHeaderContainer">
                 <h2>{feProject?.description}</h2>
             </div>
             <div>
@@ -48,7 +48,7 @@ export function ProjectsPage(): JSX.Element {
                 {feProject && <CarouselLib
                     responsive={responsive}>
                     {feProject?.imagesNames.map((image, index) =>
-                        <GalleryCard key={index} withCaption={false} gallery={undefined} imagePath={`${feProject?.imageFolderName}${image}`} />
+                        <ImageCard key={index} withCaption={false} gallery={undefined} imagePath={`${feProject?.imageFolderName}${image}`} />
                     )}
                 </CarouselLib>}
             </div>

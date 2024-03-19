@@ -3,7 +3,7 @@ import CarouselLib from "react-multi-carousel";
 import GalleryMaterialModel from "../../../../Models/GalleryMaterialModel";
 import dataService from "../../../../Service/DataArea";
 import "./GalleryMaterials.scss";
-import MaterialsCard from "./MaterialsCard/MaterialsCard";
+import MaterialsCard from "../../../Cards/MaterialsCard/MaterialsCard";
 
 function GalleryMaterials(): JSX.Element {
 

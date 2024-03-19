@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import GalleryCategoryModel from "../../../../Models/GalleryCategoryModel";
 import dataService from "../../../../Service/DataArea";
-import CategoryGallery from "../CategoryGallery/CategoryGallery";
-import "./GalleryDisplay.scss";
+import CategoryGallery from "../CategoryMaterialDisplay/CategoryMaterialDisplay";
+import "./GalleryCategoryDisplay.scss";
 
 function GalleryDisplay(): JSX.Element {
     const [feGalleryData, setFeGalleryData] = useState<GalleryCategoryModel[]>([]);

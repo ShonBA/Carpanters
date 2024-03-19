@@ -1,5 +1,5 @@
 import { ArticleModel } from "../../../Models/ArticleModel";
-import Article from "../Article/Article";
+import Article from "../../Cards/Article/Article";
 import "./Articles.scss";
 
 function Articles(): JSX.Element {
