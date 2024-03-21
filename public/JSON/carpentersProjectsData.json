@@ -2,7 +2,7 @@
   {
     "uuid": "671b1b8d-3ec2-48cb-bc33-3457ffeb1698",
     "description": "נגרות מלאה בגוונים שחור ועץ",
-    "images": [
+    "imagesData": [
       {
         "src": "https://i.imgur.com/wZizno6.jpeg",
         "title": "Testing Title",
@@ -104,7 +104,7 @@
   {
     "uuid": "15751f8b-4f51-45e2-a6cf-aa0277fe372d",
     "description": "מטבח בעיצוב יוקרתי.",
-    "images": [
+    "imagesData": [
       {
         "src": "https://i.imgur.com/ZEKjKQf.jpeg",
         "title": "Testing Title",
@@ -166,7 +166,7 @@
   {
     "uuid": "c7d21a4d-d7bb-4685-92c1-f2f82e1b99e2",
     "description": "מטבח קלאסי.",
-    "images": [
+    "imagesData": [
       {
         "src": "https://i.imgur.com/VMn0UR9.jpeg",
         "title": "Testing Title",
@@ -218,7 +218,7 @@
   {
     "uuid": "b52f1994-0332-47cf-b7ab-5c72e524b6b7",
     "description": "מטבח בגוון שחור ועץ.",
-    "images": [
+    "imagesData": [
       {
         "src": "https://i.imgur.com/Z1Xiw7W.jpeg",
         "title": "Testing Title",
