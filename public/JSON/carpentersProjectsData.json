@@ -52,7 +52,7 @@
     "photographer": "איציק ברנע",
     "designer": "שני יצחקי",
     "srcSets": [
-      [
+      
         {
           "src": "https://i.imgur.com/wZizno6.jpeg",
           "width": 1,
@@ -99,7 +99,7 @@
           "height": 1
         }
       ]
-    ]
+    
   },
   {
     "uuid": "15751f8b-4f51-45e2-a6cf-aa0277fe372d",
@@ -134,7 +134,7 @@
     "photographer": "דוד יצחקוב",
     "designer": "עדן יעקוב",
     "srcSets": [
-      [
+      
         {
           "src": "https://i.imgur.com/ZEKjKQf.jpeg",
           "width": 1,
@@ -160,7 +160,7 @@
           "width": 1,
           "height": 1
         }
-      ]
+      
     ]
   },
   {
@@ -191,7 +191,7 @@
     "photographer": "אמיר שמעוני",
     "designer": "נעמה אריאלי",
     "srcSets": [
-      [
+      
         {
           "src": "https://i.imgur.com/VMn0UR9.jpeg",
           "width": 1,
@@ -212,7 +212,7 @@
           "width": 1,
           "height": 1
         }
-      ]
+      
     ]
   },
   {
@@ -253,7 +253,7 @@
     "photographer": "טל לוי",
     "designer": "שרית אשכנזי",
     "srcSets": [
-      [
+      
         {
           "src": "https://i.imgur.com/Z1Xiw7W.jpeg",
           "width": 1,
@@ -284,7 +284,7 @@
           "width": 1,
           "height": 1
         }
-      ]
+      
     ]
   }
 ]
