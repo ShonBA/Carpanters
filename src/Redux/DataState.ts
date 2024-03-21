@@ -1,6 +1,6 @@
 import { createStore } from "redux";
 import GalleryCategoryModel from "../Models/GalleryCategoryModel";
-import ProjectModel from "../Models/ProjectModel";
+import { ProjectModel } from "../Models/ProjectModel";
 import QualityModel from "../Models/QualityModel";
 import RecommendationModel from "../Models/RecommendationModel";
 import GalleryMaterialModel from "../Models/GalleryMaterialModel";
