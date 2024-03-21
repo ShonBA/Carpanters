@@ -1,10 +1,20 @@
-class ProjectModel {
-    public uuid: string;
-    public designer: string;
-    public description: string;
-    public imageFolderName: string;
-    public imagesNames: string[];
-    public photographer: string;
+export interface ProjectModel {
+    uuid: string
+    description: string
+    imagesData: ImageDataModel[]
+    designer: string
+    photographer: string
+    srcSet: srcSetModel[]
 }
 
-export default ProjectModel;
+export interface ImageDataModel {
+    src: string
+    title: string
+    description: string
+}
+
+export interface srcSetModel {
+    src: string
+    width: number
+    height: number
+}

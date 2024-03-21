@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import ProjectModel from "../../../Models/ProjectModel";
+import { ProjectModel } from "../../../Models/ProjectModel";
 import dataService from "../../../Service/DataArea";
 import ProjectCard from "../../Cards/ProjectCard/ProjectCard";
 import "./ProjectsSection.scss";

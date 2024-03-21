@@ -1,7 +1,7 @@
 import axios from "axios";
 import GalleryCategoryModel from "../Models/GalleryCategoryModel";
 import GalleryMaterialModel from "../Models/GalleryMaterialModel";
-import ProjectModel from "../Models/ProjectModel";
+import { ProjectModel } from "../Models/ProjectModel";
 import QualityModel from "../Models/QualityModel";
 import RecommendationModel from "../Models/RecommendationModel";
 import { DataAction, DataActionTypes, dataStore } from "../Redux/DataState";

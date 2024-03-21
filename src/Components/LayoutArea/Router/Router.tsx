@@ -4,7 +4,7 @@ import Home from "../../HomeArea/Home/Home";
 import AboutUs from "../../PagesArea/AboutUs/AboutUs";
 import ContactUs from "../../PagesArea/ContactUs/ContactUs";
 import Gallery from "../../PagesArea/Gallery/Gallery";
-import { ProjectsInfo } from "../../PagesArea/ProjectInfo/ProjectInfo";
+import { ProjectsInfo } from "../../PagesArea/ProjectPage/ProjectPage";
 import Recommendations from "../../PagesArea/Recommendations/Recommendations";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import "./Router.scss";
