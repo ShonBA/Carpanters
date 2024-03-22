@@ -17,14 +17,10 @@ export function ProjectPageGallery(props: TestingProps): JSX.Element {
 
     return (
         <div className="ProjectPageGallery">
-            {/* Will be removed only for testing */}
-            <button type="button" onClick={() => setOpen(true)}>
-                Open Lightbox
-            </button>
             <div>
                 <PhotoAlbum
-                    layout="rows"
-                    photos={props.project?.srcSet}
+                    layout="columns"
+                    photos={props.project.srcSet}
                     onClick={({ index: current }) => {
                         setIndex(current);
                         setOpen(true);
@@ -34,7 +30,7 @@ export function ProjectPageGallery(props: TestingProps): JSX.Element {
                     plugins={[Captions]}
                     open={open}
                     close={() => setOpen(false)}
-                    slides={props.project?.imagesData}
+                    slides={props.project.imagesData}
                     index={index}
                 />
             </div>
