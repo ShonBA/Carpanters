@@ -20,6 +20,9 @@ function Router(): JSX.Element {
                 <Route path={appConfig.ContactUsRoute} element={<ContactUs />}></Route>
                 <Route path={appConfig.ProjectsRoute + "/:uuid"} element={<ProjectsInfo />}></Route>
 
+                {/* GH Pages */}
+                <Route path="/Carpanters" element={<Navigate to={appConfig.HomeRoute} />} />
+
                 {/* Default Routes */}
                 <Route path="/" element={<Navigate to={appConfig.HomeRoute} />} />
                 <Route path="*" element={<PageNotFound />} />
